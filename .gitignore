@@ -1,0 +1,11 @@
+# System and OS files
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+.cache/
+__pycache__/
+
+# Node
+node_modules/
