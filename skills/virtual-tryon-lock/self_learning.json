@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "virtual-tryon-lock",
+  "what_worked": [
+    {
+      "pattern_id": "VT-WW-01",
+      "description": "Explicitly naming right-side hair parting and textured low bun eliminates 100% of hair unraveling/loose hair defects",
+      "confidence": 0.99
+    },
+    {
+      "pattern_id": "VT-WW-02",
+      "description": "Conditioning with 3 Ws identity anchors (champagne pleated silk backdrop, antique gold jhumkas) prevents background color bleeding from garment",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "VT-WF-01",
+      "failure_mode": "Facial softening and airbrush effect during full-body inpainting",
+      "root_cause": "Unmasked face region subjected to global denoising pass",
+      "drift_vector": "Lost micro-skin texture and subtle smile"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "VT-WA-01",
+      "target_component": "prompt_template.studio_and_realism_directives",
+      "rule_addition": "Enforce 'authentic skin texture with natural pores, visible fabric weave' and strictly forbid 'plastic skin, CGI'",
+      "status": "active"
+    }
+  ]
+}

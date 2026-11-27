@@ -1,0 +1,33 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "skill_id": "self-learning-skill-creator",
+  "what_worked": [
+    {
+      "pattern_id": "SLSC-WW-01",
+      "description": "Pre-binding prompt_contract.json to dynamic variable schemas ensures deterministic execution across diverse models",
+      "confidence": 0.99
+    },
+    {
+      "pattern_id": "SLSC-WW-02",
+      "description": "Referencing skill-organizer as the SSOT keeps created skills lean, modular, and maintainable",
+      "confidence": 1.0
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "SLSC-WF-01",
+      "failure_mode": "Scattered prompt txt files and implicit dependencies",
+      "root_cause": "Skills created without structured JSON contracts break when executed headlessly or in automated pipelines",
+      "drift_vector": "Unpredictable outputs and missing parameters"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "SLSC-WA-01",
+      "target_component": "scaffolding_pipeline",
+      "rule_addition": "Automatically verify that prompt_contract.json validates against draft 2020-12 schema upon creation",
+      "status": "active"
+    }
+  ]
+}

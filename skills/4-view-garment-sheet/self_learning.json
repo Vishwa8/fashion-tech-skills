@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "4-view-garment-sheet",
+  "what_worked": [
+    {
+      "pattern_id": "4VG-WW-01",
+      "description": "Consistent 4 angles (0°, 45°, 90°, 180°) on invisible ghost mannequin establish definitive 3D turnaround truth for video conditioning",
+      "confidence": 0.99
+    },
+    {
+      "pattern_id": "4VG-WW-02",
+      "description": "Locking floor drape height across all 4 panels ensures vertical silhouette alignment",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "4VG-WF-01",
+      "failure_mode": "Lateral profile (90°) view hallucinating an extra cowl swag on the wrong side",
+      "root_cause": "Asymmetric drapes (cowl on wearer's left shoulder) requiring explicit single-side drape geometry enforcement",
+      "drift_vector": "Symmetrical duplicate drape error"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "4VG-WA-01",
+      "target_component": "system_prompt",
+      "rule_addition": "Enforce strict single-side drape geometry: wearer's left shoulder cowl must NOT appear on wearer's right profile",
+      "status": "active"
+    }
+  ]
+}

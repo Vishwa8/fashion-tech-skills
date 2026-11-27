@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_version": "1.0.0",
+  "skill_id": "self-learning-skill-creator",
+  "skill_name": "Self-Learning Skill Creator",
+  "category": "meta-governance",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "learning_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  
+  "task_metadata": {
+    "description": "Scaffolds and registers modular, self-learning skills conforming to skill-organizer standards",
+    "primary_model": "gemini-3.8-flash",
+    "execution_engine": "opencode_native",
+    "zero_waste_token_policy": true
+  },
+
+  "system_prompt": "You are the Universal Skill Factory agent. You scaffold modular, zero-duplication skills following the taxonomy, contract specification, and 3 Ws self-learning protocol in skills/skill-organizer/. You never duplicate overarching rules; you enforce clean separation of concerns and deterministic prompt contracts.",
+
+  "user_prompt_template": "Scaffold a new skill with ID: {{SKILL_ID}}, Category: {{CATEGORY}}, Purpose: {{PURPOSE}}, Target Models: {{MODELS}}, Dynamic Variables: {{DYNAMIC_VARIABLES}}. Output valid SKILL.md, prompt_contract.json, and self_learning.json adhering strictly to skill_contract_spec.md.",
+
+  "dynamic_variables": {
+    "SKILL_ID": { "type": "string", "description": "Kebab-case unique identifier" },
+    "CATEGORY": { "type": "string", "description": "Category from skill-organizer taxonomy" },
+    "PURPOSE": { "type": "string", "description": "Clear statement of skill scope and triggers" },
+    "MODELS": { "type": "string", "description": "Primary models or execution targets" },
+    "DYNAMIC_VARIABLES": { "type": "array", "description": "List of dynamic {{VAR}} placeholders" }
+  },
+
+  "negative_prompt_constraints": [
+    "Never create skills without SKILL.md and prompt_contract.json",
+    "Never hardcode environment-specific Windows paths",
+    "Never duplicate taxonomy definitions across individual skills",
+    "Never omit the 3 Ws self-learning ledger"
+  ],
+
+  "self_learning": {
+    "engine": "3ws_framework",
+    "active_rules_injected": [
+      "Validate JSON syntax of prompt_contract.json prior to disk write",
+      "Symlink automatically into active OpenCode skills registry"
+    ]
+  }
+}

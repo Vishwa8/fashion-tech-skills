@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "luxury-catalog-copy",
+  "what_worked": [
+    {
+      "pattern_id": "LCC-WW-01",
+      "description": "Structured JSON output format (editorial headline, product specs, Amazon bullet points, Shopify description, prompt descriptors) integrates seamlessly into CMS/e-commerce without manual parsing",
+      "confidence": 1.0
+    },
+    {
+      "pattern_id": "LCC-WW-02",
+      "description": "Using sensory luxury adjectives ('whisper-soft faux georgette', 'radiant antique gold zari') boosts conversion scores",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "LCC-WF-01",
+      "failure_mode": "Overly generic e-commerce clichés ('must-have addition to your wardrobe')",
+      "root_cause": "Unconstrained temperature causing standard LLM conversational filler",
+      "drift_vector": "Diluted brand luxury tone"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "LCC-WA-01",
+      "target_component": "system_prompt",
+      "rule_addition": "Strictly prohibit generic filler clichés; insist on artisanal couture terminology and heritage craftsmanship descriptors",
+      "status": "active"
+    }
+  ]
+}

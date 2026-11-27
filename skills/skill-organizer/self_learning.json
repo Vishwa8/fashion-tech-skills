@@ -1,0 +1,33 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "skill_id": "skill-organizer",
+  "what_worked": [
+    {
+      "pattern_id": "SO-WW-01",
+      "description": "Centralizing taxonomy and contract specifications into skill-organizer eliminates copy-paste drift across skills",
+      "confidence": 1.0
+    },
+    {
+      "pattern_id": "SO-WW-02",
+      "description": "Decoupling prompts into prompt_contract.json enables identical machine execution across ComfyUI, n8n, and CLI tools",
+      "confidence": 0.99
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "SO-WF-01",
+      "failure_mode": "Fragmented txt files (e.g., tryon-user-prompt.txt vs virtual tryon.txt)",
+      "root_cause": "Ad-hoc txt files lack parameter definitions, schema validation, and dynamic variable definitions",
+      "drift_vector": "Broken ComfyUI text nodes and unlinked pipelines"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "SO-WA-01",
+      "target_component": "prompt_contract.json",
+      "rule_addition": "Enforce single unified prompt_contract.json per skill; deprecate scattered txt files",
+      "status": "active"
+    }
+  ]
+}

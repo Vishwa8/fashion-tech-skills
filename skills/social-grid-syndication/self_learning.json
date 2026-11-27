@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "social-grid-syndication",
+  "what_worked": [
+    {
+      "pattern_id": "SGS-WW-01",
+      "description": "3x3 Instagram grid tile slicing using exact pixel coordinates (1080x1080 per tile) guarantees seamless feed presentation",
+      "confidence": 1.0
+    },
+    {
+      "pattern_id": "SGS-WW-02",
+      "description": "High-contrast editorial cover layouts with typography safe zones boost Instagram and Pinterest engagement",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "SGS-WF-01",
+      "failure_mode": "Instagram profile grid compression creating seams along tile borders",
+      "root_cause": "Sub-pixel rounding during tile slicing",
+      "drift_vector": "1px white line artifacts between adjacent grid tiles"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "SGS-WA-01",
+      "target_component": "slice_pipeline",
+      "rule_addition": "Ensure integer pixel boundary slicing with 0px overlap and exact 1080x1080 export dimensions",
+      "status": "active"
+    }
+  ]
+}

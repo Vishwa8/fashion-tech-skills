@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "dual-view-and-quad-details",
+  "what_worked": [
+    {
+      "pattern_id": "DVQ-WW-01",
+      "description": "Ghost mannequin setup eliminates human skin distraction when cataloging intricate embroidery and zari pinstripes",
+      "confidence": 0.99
+    },
+    {
+      "pattern_id": "DVQ-WW-02",
+      "description": "Macro quadrants (neckline, waistband, cowl droplets, dori tassels) provide downstream inpainters with ultra-high-resolution texture references",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "DVQ-WF-01",
+      "failure_mode": "Split view bleeding neckline gold thread into background",
+      "root_cause": "High-contrast border between garment and pure white/neutral background losing sharpness",
+      "drift_vector": "Fuzzy scalloped edges"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "DVQ-WA-01",
+      "target_component": "negative_constraints",
+      "rule_addition": "Enforce razor-sharp seam boundaries, edge contrast, and anti-bleed protocols",
+      "status": "active"
+    }
+  ]
+}

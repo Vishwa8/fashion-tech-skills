@@ -1,0 +1,34 @@
+{
+  "engine_version": "1.0.0",
+  "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
+  "governance_ref": "skills/skill-organizer/SKILL.md",
+  "skill_id": "video-turnaround-veo",
+  "what_worked": [
+    {
+      "pattern_id": "VTU-WW-01",
+      "description": "Slow-motion 0.5x speed constraint prevents rapid garment blurring and fabric tear during Veo 3.1 turnaround",
+      "confidence": 0.97
+    },
+    {
+      "pattern_id": "VTU-WW-02",
+      "description": "Continuous single camera dolly around model prevents jump cuts and keeps influencer identity rock-solid",
+      "confidence": 0.98
+    }
+  ],
+  "what_failed": [
+    {
+      "failure_id": "VTU-WF-01",
+      "failure_mode": "Model face morphing or warping during 180-degree rotation",
+      "root_cause": "Veo interpolating unseen rear face angles without strict facial anchor constraints",
+      "drift_vector": "Model's facial features changing upon turning back to front"
+    }
+  ],
+  "what_to_adapt": [
+    {
+      "adaptation_id": "VTU-WA-01",
+      "target_component": "negative_constraints",
+      "rule_addition": "Strictly inject: 'face morphing, warping, sudden cuts, glitch, jitter, erratic motion, rapid spin'",
+      "status": "active"
+    }
+  ]
+}

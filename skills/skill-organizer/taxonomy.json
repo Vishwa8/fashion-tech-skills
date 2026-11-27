@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-11-27",
+  "governance": {
+    "authority": "skill-organizer",
+    "creator": "self-learning-skill-creator",
+    "learning_engine": "3ws_protocol"
+  },
+  "categories": {
+    "meta-governance": {
+      "description": "Skills that create, organize, validate, and govern other skills",
+      "skills": ["skill-organizer", "self-learning-skill-creator"]
+    },
+    "generative-fashion": {
+      "description": "Industrial luxury fashion generation, try-on, turnaround modeling, and syndication",
+      "skills": [
+        "virtual-tryon-lock",
+        "4-view-garment-sheet",
+        "dual-view-and-quad-details",
+        "editorial-pose-matrix",
+        "fashion-upscale-refine",
+        "luxury-catalog-copy",
+        "social-grid-syndication",
+        "video-turnaround-veo"
+      ]
+    },
+    "orchestration": {
+      "description": "Agent coordination, autonomous delivery, and messaging workflows",
+      "skills": ["orchestrate", "autopilot", "behave-rules", "tele-message", "telegram"]
+    },
+    "engineering": {
+      "description": "Software architecture, development, testing, debugging, and verification",
+      "skills": ["architect", "develop", "test", "debug", "check", "scope", "audit", "sync", "document"]
+    },
+    "browser-automation": {
+      "description": "Desktop and split-screen browser navigation, interaction, and monitoring",
+      "skills": ["use-chrome", "browser"]
+    },
+    "infrastructure": {
+      "description": "Cloud, compute, database, and network infrastructure operations",
+      "skills": ["deployment-discipline", "oci-vm-2-12", "modal-qwen", "tailscale", "neon"]
+    }
+  },
+  "standards": {
+    "required_files": ["SKILL.md", "prompt_contract.json", "self_learning.json"],
+    "schema_contract": "skills/skill-organizer/protocol/skill_contract_spec.md",
+    "learning_protocol": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md"
+  }
+}
