@@ -12,6 +12,11 @@
       "pattern_id": "SO-WW-02",
       "description": "Decoupling prompts into prompt_contract.json enables identical machine execution across ComfyUI, n8n, and CLI tools",
       "confidence": 0.99
+    },
+    {
+      "pattern_id": "SO-WW-03",
+      "description": "Auto-restart reloader shield with full app disablement and /system_stats health polling eliminates stranded WebSocket reconnection states",
+      "confidence": 1.0
     }
   ],
   "what_failed": [
