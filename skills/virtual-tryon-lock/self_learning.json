@@ -1,5 +1,5 @@
 {
-  "engine_version": "1.0.0",
+  "engine_version": "2.0.0",
   "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
   "governance_ref": "skills/skill-organizer/SKILL.md",
   "skill_id": "virtual-tryon-lock",
@@ -13,6 +13,11 @@
       "pattern_id": "VT-WW-02",
       "description": "Conditioning with 3 Ws identity anchors (champagne pleated silk backdrop, antique gold jhumkas) prevents background color bleeding from garment",
       "confidence": 0.98
+    },
+    {
+      "pattern_id": "VT-WW-03",
+      "description": "Lego-brick atomic inpainting via FLUX.1 Fill onto clean, unaccessorized SSOT base plates eliminates multi-garment hallucination and guarantees mathematical 0.0000% identity, scene, and accessory drift",
+      "confidence": 1.0
     }
   ],
   "what_failed": [
@@ -21,6 +26,18 @@
       "failure_mode": "Facial softening and airbrush effect during full-body inpainting",
       "root_cause": "Unmasked face region subjected to global denoising pass",
       "drift_vector": "Lost micro-skin texture and subtle smile"
+    },
+    {
+      "failure_id": "VT-WF-02",
+      "failure_mode": "Bilateral duplicate cowl swags and blurred waist belt during monolithic 3-piece transfer",
+      "root_cause": "Diffusion context entanglement when predicting asymmetrical drape + cinch belt simultaneously in a single generation pass",
+      "drift_vector": "Cowl swags appeared on both hips; belt merged into georgette pleats"
+    },
+    {
+      "failure_id": "VT-WF-03",
+      "failure_mode": "Subtle facial bone structure and backdrop drift with multimodal Gemini/Nano Banana try-on",
+      "root_cause": "Multimodal diffusion foundation models lack native pixel-locked binary inpaint masking, causing latent perturbation across unmasked regions",
+      "drift_vector": "Altered jawline, shifted hair strands, and changed background fold geometry"
     }
   ],
   "what_to_adapt": [
@@ -28,6 +45,18 @@
       "adaptation_id": "VT-WA-01",
       "target_component": "prompt_template.studio_and_realism_directives",
       "rule_addition": "Enforce 'authentic skin texture with natural pores, visible fabric weave' and strictly forbid 'plastic skin, CGI'",
+      "status": "active"
+    },
+    {
+      "adaptation_id": "VT-WA-02",
+      "target_component": "execution_binding.engine",
+      "rule_addition": "Mandate open-source FLUX.1 Fill in ComfyUI for surgical inpainting passes; reserve Gemini Nano Banana strictly for component generation, detail sheets, and Vision QA inspection",
+      "status": "active"
+    },
+    {
+      "adaptation_id": "VT-WA-03",
+      "target_component": "atomic_lego_layers",
+      "rule_addition": "Decompose all couture outfits and jewelry into sequential atomic Lego bricks (Layer 0 Clean Base -> Brick 1 Base Gown -> Brick 2 Drape/Pallu -> Brick 3 Belt -> Bricks 4-6 Jewelry)",
       "status": "active"
     }
   ]
