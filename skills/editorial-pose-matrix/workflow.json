@@ -1,1 +1,2688 @@
-{"id":"ad9ec4c3-5752-4461-9434-c4c86181094b","revision":0,"last_node_id":49,"last_link_id":77,"nodes":[{"id":1,"type":"StringConstant","pos":[8295.516572533881,1679.216809434479],"size":[270,58],"flags":{},"order":0,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[11]}],"title":"Pose path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["\\adshoot\\images\\pose\\"]},{"id":2,"type":"SomethingToString","pos":[7347.181640028526,1505.3345687863196],"size":[270,82],"flags":{},"order":15,"mode":0,"inputs":[{"localized_name":"input","name":"input","type":"*","link":1},{"localized_name":"prefix","name":"prefix","shape":7,"type":"STRING","widget":{"name":"prefix"},"link":null},{"localized_name":"suffix","name":"suffix","shape":7,"type":"STRING","widget":{"name":"suffix"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[4]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"SomethingToString"},"widgets_values":["",""]},{"id":3,"type":"StringConstant","pos":[8302.007583710678,1350.4558621746125],"size":[270,58],"flags":{},"order":1,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[2]}],"title":"Product path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["E:\\Ayurti\\Products\\"]},{"id":4,"type":"StringConstant","pos":[8295.686620020693,1515.8168886029223],"size":[270,58],"flags":{},"order":2,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[6]}],"title":"Adshoot base path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["\\adshoot\\images\\base\\"]},{"id":5,"type":"JoinStrings","pos":[8620.012079482814,1452.9645420148172],"size":[270,78],"flags":{},"order":22,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":2},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":3},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[5,10]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":6,"type":"StringConcatenate","pos":[7685.300702310534,1450.901517895825],"size":[400,200],"flags":{},"order":19,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":4},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[3]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["Product ","",""]},{"id":8,"type":"JoinStrings","pos":[8954.301950476929,1463.577200575626],"size":[270,78],"flags":{},"order":24,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":5},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":6},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[7]}],"title":"Full Adshoot base path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":12,"type":"JoinStrings","pos":[8956.863377937607,1637.835869071799],"size":[270,78],"flags":{},"order":25,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":10},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":11},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[9]}],"title":"Full Pose path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":7,"type":"VishwaLoadText","pos":[9614.268575121485,1576.0031627282676],"size":[210,184],"flags":{},"order":3,"mode":0,"inputs":[{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":null},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"missing_behavior","name":"missing_behavior","type":"COMBO","widget":{"name":"missing_behavior"},"link":null},{"localized_name":"default_text","name":"default_text","type":"STRING","widget":{"name":"default_text"},"link":null}],"outputs":[{"localized_name":"text","name":"text","type":"STRING","links":[8]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"ea406ff5344181b5cca336ce75e3bc683aa8288a","Node name for S&R":"VishwaLoadText"},"widgets_values":["E:\\Ayurti\\Docs","pose-transfer-redisigned","txt","error",""]},{"id":9,"type":"PreviewAny","pos":[9348.449384083808,1636.5365645589088],"size":[210,112],"flags":{},"order":26,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":7}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[16,23]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":13,"type":"ImageBatchMulti","pos":[9611.006186693081,1414.1708010804448],"size":[210,122],"flags":{},"order":30,"mode":0,"inputs":[{"localized_name":"image_1","name":"image_1","type":"IMAGE","link":24},{"localized_name":"image_2","name":"image_2","shape":7,"type":"IMAGE","link":25},{"localized_name":"inputcount","name":"inputcount","type":"INT","widget":{"name":"inputcount"},"link":null},{"name":"image_3","shape":7,"type":"IMAGE","link":26}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[27,28]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"ImageBatchMulti"},"widgets_values":[3,null]},{"id":11,"type":"PreviewAny","pos":[13817.604472529682,1724.9214811920667],"size":[210,112],"flags":{},"order":27,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":9}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[15]}],"title":"output_file_path","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":26,"type":"StringConcatenate","pos":[13817.366928937989,1510.7907791556854],"size":[210,166],"flags":{},"order":10,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":32},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":null},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[33]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["View","_\n",""]},{"id":22,"type":"PreviewAny","pos":[12460.920935358105,1554.5413632947232],"size":[361.0386023294486,433.971713810311],"flags":{},"order":32,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":20}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[22]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":27,"type":"PreviewAny","pos":[9354.718292541338,1447.6692233196814],"size":[210,112],"flags":{},"order":11,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":49}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":41,"type":"StringCompare","pos":[9329.727807343324,1822.1242184224232],"size":[210,190],"flags":{},"order":13,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":52},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":null},{"localized_name":"mode","name":"mode","type":"COMBO","widget":{"name":"mode"},"link":null},{"localized_name":"case_sensitive","name":"case_sensitive","type":"BOOLEAN","widget":{"name":"case_sensitive"},"link":null}],"outputs":[{"localized_name":"BOOLEAN","name":"BOOLEAN","type":"BOOLEAN","links":[53,62]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringCompare"},"widgets_values":["","","Equal",true]},{"id":39,"type":"PrimitiveStringMultiline","pos":[9648.532965391038,1985.2026073597228],"size":[210,88],"flags":{},"order":4,"mode":0,"inputs":[{"localized_name":"value","name":"value","type":"STRING","widget":{"name":"value"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[58,66]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PrimitiveStringMultiline"},"widgets_values":["Adapt the system prompt to this sceneraio for the attched images, Must return only the prompt."]},{"id":43,"type":"StringConcatenate","pos":[9324.831091186265,2077.64859853397],"size":[210,166],"flags":{},"order":14,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":68},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[57]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["In the following camera angle: ","",""]},{"id":10,"type":"PreviewAny","pos":[9623.488123015371,1820.7704909782838],"size":[210,112],"flags":{},"order":9,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":8}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[21]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":42,"type":"PreviewAny","pos":[9638.858282144858,2134.0794473065985],"size":[210,112],"flags":{},"order":17,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":53}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":44,"type":"StringConcatenate","pos":[9403.754932910932,2328.5995732975084],"size":[372.82787291239947,166],"flags":{},"order":18,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":58},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":57},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[67]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["",""," "]},{"id":14,"type":"VishwaSaveImagePath","pos":[13796.469184254494,1912.9586316655066],"size":[270,174],"flags":{},"order":34,"mode":0,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":14},{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":15},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":33},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"overwrite","name":"overwrite","type":"BOOLEAN","widget":{"name":"overwrite"},"link":null},{"localized_name":"quality","name":"quality","type":"INT","widget":{"name":"quality"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":null},{"localized_name":"saved_paths","name":"saved_paths","type":"STRING","links":[]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaSaveImagePath"},"widgets_values":["","","png",false,100]},{"id":16,"type":"PreviewImage","pos":[13303.253857072797,1529.0920599400206],"size":[424.5332885742191,454.26671142578107],"flags":{},"order":35,"mode":0,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":17}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewImage"},"widgets_values":[]},{"id":47,"type":"PreviewAny","pos":[11633.381860311345,1792.7727209699383],"size":[305.00743736923505,213.5037186846173],"flags":{},"order":23,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":65}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[69]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":40,"type":"easy ifElse","pos":[11694.741883097548,1587.737781383293],"size":[210,78],"flags":{},"order":21,"mode":0,"inputs":[{"localized_name":"on_true","name":"on_true","type":"*","link":66},{"localized_name":"on_false","name":"on_false","type":"*","link":67},{"localized_name":"boolean","name":"boolean","type":"BOOLEAN","widget":{"name":"boolean"},"link":62}],"outputs":[{"localized_name":"*","name":"*","type":"*","links":[65]}],"properties":{"cnr_id":"comfyui-easy-use","ver":"ec4ca6717f539a8b8c48fa88645045846ca47669","Node name for S&R":"easy ifElse"},"widgets_values":[false]},{"id":48,"type":"PreviewAny","pos":[10880.100140495028,1231.2992191072212],"size":[210,166],"flags":{},"order":16,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":75}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[77]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":49,"type":"StringConcatenate","pos":[10621.78157047189,1218.7362521823634],"size":[210,166],"flags":{},"order":12,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":73},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[75]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["E:\\Ayurti\\Poses","","\\"]},{"id":21,"type":"VishwaGoogleGeminiText","pos":[12013.562054971953,1549.1040423533589],"size":[400,456],"flags":{},"order":31,"mode":0,"inputs":[{"localized_name":"images","name":"images","shape":7,"type":"IMAGE","link":27},{"localized_name":"document_path","name":"document_path","shape":7,"type":"STRING","link":null},{"localized_name":"prompt","name":"prompt","type":"STRING","widget":{"name":"prompt"},"link":69},{"localized_name":"model_preset","name":"model_preset","type":"COMBO","widget":{"name":"model_preset"},"link":null},{"localized_name":"custom_model","name":"custom_model","type":"STRING","widget":{"name":"custom_model"},"link":null},{"localized_name":"seed","name":"seed","type":"INT","widget":{"name":"seed"},"link":null},{"localized_name":"temperature","name":"temperature","type":"FLOAT","widget":{"name":"temperature"},"link":null},{"localized_name":"top_p","name":"top_p","type":"FLOAT","widget":{"name":"top_p"},"link":null},{"localized_name":"top_k","name":"top_k","type":"INT","widget":{"name":"top_k"},"link":null},{"localized_name":"max_output_tokens","name":"max_output_tokens","type":"INT","widget":{"name":"max_output_tokens"},"link":null},{"localized_name":"use_google_search","name":"use_google_search","type":"BOOLEAN","widget":{"name":"use_google_search"},"link":null},{"localized_name":"response_mime_type","name":"response_mime_type","type":"COMBO","widget":{"name":"response_mime_type"},"link":null},{"localized_name":"system_prompt","name":"system_prompt","type":"STRING","widget":{"name":"system_prompt"},"link":21},{"localized_name":"file_paths","name":"file_paths","type":"STRING","widget":{"name":"file_paths"},"link":null}],"outputs":[{"localized_name":"text","name":"text","type":"STRING","links":[20]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"8eb0316aaee44451195653d63806dacf63e1e30b","Node name for S&R":"VishwaGoogleGeminiText"},"widgets_values":["","Gemini 3 Pro Preview","",1273100928,"fixed",-1,-1,-1,-1,false,"text/plain","Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's hair style, jewellery (earrings, chain, bangles) and sandals.\n\nPreserve the exact same woman, face, skin tone, hair, expression, jewelry, hands, pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nFaithfully Transfer the hair style, simple yet elgant fashion freindly jewellery (earrings, bangles) and sandals.\n\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n",""]},{"id":17,"type":"VishwaGeminiNanoBananaImage","pos":[12878.899182056193,1549.833740883134],"size":[391.8941765112304,446.5564099999999],"flags":{},"order":33,"mode":0,"inputs":[{"localized_name":"images","name":"images","shape":7,"type":"IMAGE","link":28},{"localized_name":"prompt","name":"prompt","type":"STRING","widget":{"name":"prompt"},"link":22},{"localized_name":"model_preset","name":"model_preset","type":"COMBO","widget":{"name":"model_preset"},"link":null},{"localized_name":"custom_model","name":"custom_model","type":"STRING","widget":{"name":"custom_model"},"link":null},{"localized_name":"aspect_ratio","name":"aspect_ratio","type":"COMBO","widget":{"name":"aspect_ratio"},"link":null},{"localized_name":"image_size","name":"image_size","type":"COMBO","widget":{"name":"image_size"},"link":null},{"localized_name":"thinking_level","name":"thinking_level","type":"COMBO","widget":{"name":"thinking_level"},"link":null},{"localized_name":"use_google_search","name":"use_google_search","type":"BOOLEAN","widget":{"name":"use_google_search"},"link":null},{"localized_name":"number_of_images","name":"number_of_images","type":"INT","widget":{"name":"number_of_images"},"link":null},{"localized_name":"seed","name":"seed","type":"INT","widget":{"name":"seed"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[14,17]},{"localized_name":"response_text","name":"response_text","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaGeminiNanoBananaImage"},"widgets_values":["Use the base image 1 as the identity, body, lighting, and scene source of truth. Replace only the model's pose & expression with the uploaded reference (image 2) keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair, jewelry, hands, body proportions, camera angle, framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the pose & expression faithfully as in the image 2 exactly.\n\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n","Nano Banana 2","","9:16","4K","default",false,1,824752577,"fixed"]},{"id":15,"type":"VishwaLoadImageBrowserPath","pos":[10431.137349613055,1505.3915599120937],"size":[332.4950897935538,558],"flags":{},"order":28,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":16},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[25]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"a818dc243834ccd2494506f40225dca93ac2141d","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["","back_","png","back_mockup-v5.png","","refresh"],"color":"#322","bgcolor":"#533"},{"id":23,"type":"VishwaLoadImageBrowserPath","pos":[10034.420977097467,1506.9367440077574],"size":[335.6358315247668,558],"flags":{},"order":29,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":23},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[24]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"a818dc243834ccd2494506f40225dca93ac2141d","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["","front_","png","front_mockup-v5.png","","refresh"],"color":"#322","bgcolor":"#533"},{"id":18,"type":"INTConstant","pos":[11649.42999010606,1311.2643692254492],"size":[210,58],"flags":{},"order":7,"mode":0,"inputs":[{"localized_name":"value","name":"value","type":"INT","widget":{"name":"value"},"link":null}],"outputs":[{"localized_name":"value","name":"value","type":"INT","links":[1]}],"title":"Product Number","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"INTConstant"},"widgets_values":[2],"color":"#1b4669","bgcolor":"#29699c"},{"id":19,"type":"Fast Groups Bypasser (rgthree)","pos":[11273.286218432277,1252.0813093936715],"size":[247.2955078125,154],"flags":{},"order":8,"mode":0,"inputs":[],"outputs":[{"name":"OPT_CONNECTION","type":"*","links":null}],"properties":{"matchColors":"","matchTitle":"","showNav":true,"showAllGraphs":false,"sort":"position","customSortAlphabet":"","toggleRestriction":"default"},"color":"#232","bgcolor":"#353"},{"id":24,"type":"VishwaDropdownValues","pos":[11248.076481645618,1457.7874766020154],"size":[270,130],"flags":{},"order":5,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":null},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"selected_value","name":"selected_value","type":"COMBO","widget":{"name":"selected_value"},"link":null}],"outputs":[{"localized_name":"selected_value","name":"selected_value","type":"STRING","links":[32,49,73]}],"title":"Composition","properties":{"aux_id":"Vishwa8/vishwa","ver":"8eb0316aaee44451195653d63806dacf63e1e30b","Node name for S&R":"VishwaDropdownValues"},"widgets_values":["E:\\Ayurti\\Docs","closeup-dropdown-dress.json","front","refresh"],"color":"#322","bgcolor":"#533"},{"id":20,"type":"VishwaLoadImageBrowserPath","pos":[10835.907025915263,1500.7550897397175],"size":[321.0313824746223,558],"flags":{},"order":20,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":77},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[26]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"a818dc243834ccd2494506f40225dca93ac2141d","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["E:\\Ayurti\\Poses\\front","","any","RIMO on Instagram_ _Poses para intentar en tus fotos 🔥 #poses #fotografía #posesdefotos_.jpg","","refresh"],"color":"#322","bgcolor":"#533"},{"id":28,"type":"VishwaDropdownValues","pos":[11250.7800677485,1789.2668238606393],"size":[277.781898569051,172.80044212978328],"flags":{},"order":6,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":null},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"selected_value","name":"selected_value","type":"COMBO","widget":{"name":"selected_value"},"link":null}],"outputs":[{"localized_name":"selected_value","name":"selected_value","type":"STRING","links":[52,68]}],"title":"Camera Angle","properties":{"aux_id":"Vishwa8/vishwa","ver":"8eb0316aaee44451195653d63806dacf63e1e30b","Node name for S&R":"VishwaDropdownValues"},"widgets_values":["E:\\Ayurti\\Docs","camera-angles-dropdown.json","Bird Eye View","refresh"],"color":"#322","bgcolor":"#533"}],"links":[[1,18,0,2,0,"INT"],[2,3,0,5,0,"STRING"],[3,6,0,5,1,"STRING"],[4,2,0,6,1,"STRING"],[5,5,0,8,0,"STRING"],[6,4,0,8,1,"STRING"],[7,8,0,9,0,"STRING"],[8,7,0,10,0,"STRING"],[9,12,0,11,0,"STRING"],[10,5,0,12,0,"STRING"],[11,1,0,12,1,"STRING"],[14,17,0,14,0,"IMAGE"],[15,11,0,14,1,"STRING"],[16,9,0,15,0,"STRING"],[17,17,0,16,0,"IMAGE"],[20,21,0,22,0,"STRING"],[21,10,0,21,12,"STRING"],[22,22,0,17,1,"STRING"],[23,9,0,23,0,"STRING"],[24,23,0,13,0,"IMAGE"],[25,15,0,13,1,"IMAGE"],[26,20,0,13,3,"IMAGE"],[27,13,0,21,0,"IMAGE"],[28,13,0,17,0,"IMAGE"],[32,24,0,26,0,"STRING"],[33,26,0,14,2,"STRING"],[49,24,0,27,0,"STRING"],[52,28,0,41,0,"STRING"],[53,41,0,42,0,"BOOLEAN"],[57,43,0,44,1,"STRING"],[58,39,0,44,0,"STRING"],[62,41,0,40,2,"BOOLEAN"],[65,40,0,47,0,"*"],[66,39,0,40,0,"STRING"],[67,44,0,40,1,"STRING"],[68,28,0,43,1,"STRING"],[69,47,0,21,2,"STRING"],[73,24,0,49,1,"STRING"],[75,49,0,48,0,"STRING"],[77,48,0,20,0,"STRING"]],"groups":[{"id":1,"title":"Pose Transfer","bounding":[11623.381860311345,1437.1907791556855,2453.0873239431494,659.7678525098214],"color":"#3f789e","font_size":24,"flags":{}},{"id":2,"title":"Camera","bounding":[11231.58334781116,1616.8020845342137,313.87615845939945,486.31844056333125],"color":"#3f789e","font_size":24,"flags":{}}],"config":{},"extra":{"ds":{"scale":1.2409279506382969,"offset":[-10430.051780206199,-1342.7804987026086]}},"version":0.4}
+{
+  "id": "ad9ec4c3-5752-4461-9434-c4c86181094b",
+  "revision": 0,
+  "last_node_id": 49,
+  "last_link_id": 77,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "StringConstant",
+      "pos": [
+        8295.516572533881,
+        1679.216809434479
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "title": "Pose path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "\\adshoot\\images\\pose\\"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "SomethingToString",
+      "pos": [
+        7347.181640028526,
+        1505.3345687863196
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input",
+          "name": "input",
+          "type": "*",
+          "link": 1
+        },
+        {
+          "localized_name": "prefix",
+          "name": "prefix",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "suffix",
+          "name": "suffix",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "suffix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "SomethingToString"
+      },
+      "widgets_values": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "StringConstant",
+      "pos": [
+        8302.007583710678,
+        1350.4558621746125
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "Product path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "StringConstant",
+      "pos": [
+        8295.686620020693,
+        1515.8168886029223
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "title": "Adshoot base path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "\\adshoot\\images\\base\\"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "JoinStrings",
+      "pos": [
+        8620.012079482814,
+        1452.9645420148172
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 3
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5,
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "StringConcatenate",
+      "pos": [
+        7685.300702310534,
+        1450.901517895825
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 4
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "Product ",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "type": "JoinStrings",
+      "pos": [
+        8954.301950476929,
+        1463.577200575626
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 5
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 6
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "Full Adshoot base path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 12,
+      "type": "JoinStrings",
+      "pos": [
+        8956.863377937607,
+        1637.835869071799
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 10
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 11
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "title": "Full Pose path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "VishwaLoadText",
+      "pos": [
+        9614.268575121485,
+        1576.0031627282676
+      ],
+      "size": [
+        210,
+        184
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "missing_behavior",
+          "name": "missing_behavior",
+          "type": "COMBO",
+          "widget": {
+            "name": "missing_behavior"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "default_text",
+          "name": "default_text",
+          "type": "STRING",
+          "widget": {
+            "name": "default_text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "ea406ff5344181b5cca336ce75e3bc683aa8288a",
+        "Node name for S&R": "VishwaLoadText"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/docs/templates",
+        "pose-transfer-redisigned",
+        "txt",
+        "error",
+        ""
+      ]
+    },
+    {
+      "id": 9,
+      "type": "PreviewAny",
+      "pos": [
+        9348.449384083808,
+        1636.5365645589088
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16,
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ImageBatchMulti",
+      "pos": [
+        9611.006186693081,
+        1414.1708010804448
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 24
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "localized_name": "inputcount",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            27,
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "ImageBatchMulti"
+      },
+      "widgets_values": [
+        3,
+        null
+      ]
+    },
+    {
+      "id": 11,
+      "type": "PreviewAny",
+      "pos": [
+        13817.604472529682,
+        1724.9214811920667
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "title": "output_file_path",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 26,
+      "type": "StringConcatenate",
+      "pos": [
+        13817.366928937989,
+        1510.7907791556854
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 32
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "View",
+        "_\n",
+        ""
+      ]
+    },
+    {
+      "id": 22,
+      "type": "PreviewAny",
+      "pos": [
+        12460.920935358105,
+        1554.5413632947232
+      ],
+      "size": [
+        361.0386023294486,
+        433.971713810311
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 27,
+      "type": "PreviewAny",
+      "pos": [
+        9354.718292541338,
+        1447.6692233196814
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 41,
+      "type": "StringCompare",
+      "pos": [
+        9329.727807343324,
+        1822.1242184224232
+      ],
+      "size": [
+        210,
+        190
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 52
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "case_sensitive",
+          "name": "case_sensitive",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "case_sensitive"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "BOOLEAN",
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            53,
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringCompare"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "Equal",
+        true
+      ]
+    },
+    {
+      "id": 39,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        9648.532965391038,
+        1985.2026073597228
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            58,
+            66
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Adapt the system prompt to this sceneraio for the attched images, Must return only the prompt."
+      ]
+    },
+    {
+      "id": 43,
+      "type": "StringConcatenate",
+      "pos": [
+        9324.831091186265,
+        2077.64859853397
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 68
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            57
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "In the following camera angle: ",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewAny",
+      "pos": [
+        9623.488123015371,
+        1820.7704909782838
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 42,
+      "type": "PreviewAny",
+      "pos": [
+        9638.858282144858,
+        2134.0794473065985
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 44,
+      "type": "StringConcatenate",
+      "pos": [
+        9403.754932910932,
+        2328.5995732975084
+      ],
+      "size": [
+        372.82787291239947,
+        166
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 58
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 57
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            67
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 14,
+      "type": "VishwaSaveImagePath",
+      "pos": [
+        13796.469184254494,
+        1912.9586316655066
+      ],
+      "size": [
+        270,
+        174
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 15
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 33
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "INT",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "saved_paths",
+          "name": "saved_paths",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaSaveImagePath"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "png",
+        false,
+        100
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": [
+        13303.253857072797,
+        1529.0920599400206
+      ],
+      "size": [
+        424.5332885742191,
+        454.26671142578107
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 47,
+      "type": "PreviewAny",
+      "pos": [
+        11633.381860311345,
+        1792.7727209699383
+      ],
+      "size": [
+        305.00743736923505,
+        213.5037186846173
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            69
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 40,
+      "type": "easy ifElse",
+      "pos": [
+        11694.741883097548,
+        1587.737781383293
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "on_true",
+          "name": "on_true",
+          "type": "*",
+          "link": 66
+        },
+        {
+          "localized_name": "on_false",
+          "name": "on_false",
+          "type": "*",
+          "link": 67
+        },
+        {
+          "localized_name": "boolean",
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "boolean"
+          },
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "*",
+          "name": "*",
+          "type": "*",
+          "links": [
+            65
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "ec4ca6717f539a8b8c48fa88645045846ca47669",
+        "Node name for S&R": "easy ifElse"
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 48,
+      "type": "PreviewAny",
+      "pos": [
+        10880.100140495028,
+        1231.2992191072212
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            77
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 49,
+      "type": "StringConcatenate",
+      "pos": [
+        10621.78157047189,
+        1218.7362521823634
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 73
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            75
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/product_01/poses",
+        "",
+        "\\"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "VishwaGoogleGeminiText",
+      "pos": [
+        12013.562054971953,
+        1549.1040423533589
+      ],
+      "size": [
+        400,
+        456
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 27
+        },
+        {
+          "localized_name": "document_path",
+          "name": "document_path",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 69
+        },
+        {
+          "localized_name": "model_preset",
+          "name": "model_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "temperature",
+          "name": "temperature",
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_p",
+          "name": "top_p",
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_k",
+          "name": "top_k",
+          "type": "INT",
+          "widget": {
+            "name": "top_k"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_output_tokens",
+          "name": "max_output_tokens",
+          "type": "INT",
+          "widget": {
+            "name": "max_output_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "use_google_search",
+          "name": "use_google_search",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "use_google_search"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_mime_type",
+          "name": "response_mime_type",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_mime_type"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 21
+        },
+        {
+          "localized_name": "file_paths",
+          "name": "file_paths",
+          "type": "STRING",
+          "widget": {
+            "name": "file_paths"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "8eb0316aaee44451195653d63806dacf63e1e30b",
+        "Node name for S&R": "VishwaGoogleGeminiText"
+      },
+      "widgets_values": [
+        "",
+        "Gemini 3 Pro Preview",
+        "",
+        1273100928,
+        "fixed",
+        -1,
+        -1,
+        -1,
+        -1,
+        false,
+        "text/plain",
+        "Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's hair style, jewellery (earrings, chain, bangles) and sandals.\n\nPreserve the exact same woman, face, skin tone, hair, expression, jewelry, hands, pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nFaithfully Transfer the hair style, simple yet elgant fashion freindly jewellery (earrings, bangles) and sandals.\n\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n",
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "VishwaGeminiNanoBananaImage",
+      "pos": [
+        12878.899182056193,
+        1549.833740883134
+      ],
+      "size": [
+        391.8941765112304,
+        446.5564099999999
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 28
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 22
+        },
+        {
+          "localized_name": "model_preset",
+          "name": "model_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_size",
+          "name": "image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "image_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_level",
+          "name": "thinking_level",
+          "type": "COMBO",
+          "widget": {
+            "name": "thinking_level"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "use_google_search",
+          "name": "use_google_search",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "use_google_search"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "number_of_images",
+          "name": "number_of_images",
+          "type": "INT",
+          "widget": {
+            "name": "number_of_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            14,
+            17
+          ]
+        },
+        {
+          "localized_name": "response_text",
+          "name": "response_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaGeminiNanoBananaImage"
+      },
+      "widgets_values": [
+        "Use image 1 as the identity, garment, body, lighting, and scene source of truth. Replace only the model's pose and camera angle with the pose specified below, keeping everything else strictly the same.\n\nPreserve the exact same woman, face, skin tone, hair parting and bun, jewelry, hands, body proportions, cream satin draped background, floor drape, and sandals. Preserve the exact garment details: {{GARMENT_KEY_DETAILS}}.\n\nTransfer the pose and camera angle faithfully: {{POSE_AND_CAMERA_DESCRIPTION}}\n\nDo not change identity, hairstyle, garment construction, background, lighting, or accessories. Photorealistic high-fashion editorial catalog photography.\n\nNEGATIVE DIRECTIVES (STRICTLY FORBIDDEN):\nidentity drift, different model, face morphing, altered neckline, missing cowl drape, wrong color, pattern distortion, extra arms, distorted fingers, broken hands, background change, blurry details, cartoon, render.\n\nPHYSICAL INTEGRITY & 3WS COMPLIANCE:\nStatic structural garment lock during dynamic motion (closed skirt, single-side cowl anchored, floor-length sweep); zero facial morphing.\n",
+        "Nano Banana 2",
+        "",
+        "9:16",
+        "4K",
+        "default",
+        false,
+        1,
+        824752577,
+        "fixed"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        10431.137349613055,
+        1505.3915599120937
+      ],
+      "size": [
+        332.4950897935538,
+        558
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 16
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "a818dc243834ccd2494506f40225dca93ac2141d",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "",
+        "back_",
+        "png",
+        "back_mockup-v5.png",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 23,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        10034.420977097467,
+        1506.9367440077574
+      ],
+      "size": [
+        335.6358315247668,
+        558
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 23
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            24
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "a818dc243834ccd2494506f40225dca93ac2141d",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "",
+        "front_",
+        "png",
+        "front_mockup-v5.png",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 18,
+      "type": "INTConstant",
+      "pos": [
+        11649.42999010606,
+        1311.2643692254492
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "Product Number",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "INTConstant"
+      },
+      "widgets_values": [
+        2
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 19,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        11273.286218432277,
+        1252.0813093936715
+      ],
+      "size": [
+        247.2955078125,
+        154
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 24,
+      "type": "VishwaDropdownValues",
+      "pos": [
+        11248.076481645618,
+        1457.7874766020154
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "STRING",
+          "links": [
+            32,
+            49,
+            73
+          ]
+        }
+      ],
+      "title": "Composition",
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "8eb0316aaee44451195653d63806dacf63e1e30b",
+        "Node name for S&R": "VishwaDropdownValues"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/docs/templates",
+        "closeup-dropdown-dress.json",
+        "front",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 20,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        10835.907025915263,
+        1500.7550897397175
+      ],
+      "size": [
+        321.0313824746223,
+        558
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 77
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            26
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "a818dc243834ccd2494506f40225dca93ac2141d",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/product_01/poses",
+        "",
+        "any",
+        "RIMO on Instagram_ _Poses para intentar en tus fotos \ud83d\udd25 #poses #fotograf\u00eda #posesdefotos_.jpg",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 28,
+      "type": "VishwaDropdownValues",
+      "pos": [
+        11250.7800677485,
+        1789.2668238606393
+      ],
+      "size": [
+        277.781898569051,
+        172.80044212978328
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "STRING",
+          "links": [
+            52,
+            68
+          ]
+        }
+      ],
+      "title": "Camera Angle",
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "8eb0316aaee44451195653d63806dacf63e1e30b",
+        "Node name for S&R": "VishwaDropdownValues"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/docs/templates",
+        "camera-angles-dropdown.json",
+        "Bird Eye View",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    }
+  ],
+  "links": [
+    [
+      1,
+      18,
+      0,
+      2,
+      0,
+      "INT"
+    ],
+    [
+      2,
+      3,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      6,
+      0,
+      5,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      2,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      5,
+      5,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      4,
+      0,
+      8,
+      1,
+      "STRING"
+    ],
+    [
+      7,
+      8,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      7,
+      0,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      12,
+      0,
+      11,
+      0,
+      "STRING"
+    ],
+    [
+      10,
+      5,
+      0,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      1,
+      0,
+      12,
+      1,
+      "STRING"
+    ],
+    [
+      14,
+      17,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      11,
+      0,
+      14,
+      1,
+      "STRING"
+    ],
+    [
+      16,
+      9,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      17,
+      17,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      21,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      21,
+      10,
+      0,
+      21,
+      12,
+      "STRING"
+    ],
+    [
+      22,
+      22,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      23,
+      9,
+      0,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      23,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      25,
+      15,
+      0,
+      13,
+      1,
+      "IMAGE"
+    ],
+    [
+      26,
+      20,
+      0,
+      13,
+      3,
+      "IMAGE"
+    ],
+    [
+      27,
+      13,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      13,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      32,
+      24,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      33,
+      26,
+      0,
+      14,
+      2,
+      "STRING"
+    ],
+    [
+      49,
+      24,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      28,
+      0,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      53,
+      41,
+      0,
+      42,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      57,
+      43,
+      0,
+      44,
+      1,
+      "STRING"
+    ],
+    [
+      58,
+      39,
+      0,
+      44,
+      0,
+      "STRING"
+    ],
+    [
+      62,
+      41,
+      0,
+      40,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      65,
+      40,
+      0,
+      47,
+      0,
+      "*"
+    ],
+    [
+      66,
+      39,
+      0,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      67,
+      44,
+      0,
+      40,
+      1,
+      "STRING"
+    ],
+    [
+      68,
+      28,
+      0,
+      43,
+      1,
+      "STRING"
+    ],
+    [
+      69,
+      47,
+      0,
+      21,
+      2,
+      "STRING"
+    ],
+    [
+      73,
+      24,
+      0,
+      49,
+      1,
+      "STRING"
+    ],
+    [
+      75,
+      49,
+      0,
+      48,
+      0,
+      "STRING"
+    ],
+    [
+      77,
+      48,
+      0,
+      20,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Pose Transfer",
+      "bounding": [
+        11623.381860311345,
+        1437.1907791556855,
+        2453.0873239431494,
+        659.7678525098214
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Camera",
+      "bounding": [
+        11231.58334781116,
+        1616.8020845342137,
+        313.87615845939945,
+        486.31844056333125
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.2409279506382969,
+      "offset": [
+        -10430.051780206199,
+        -1342.7804987026086
+      ]
+    }
+  },
+  "version": 0.4
+}

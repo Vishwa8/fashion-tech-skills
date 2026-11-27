@@ -1,1 +1,1088 @@
-{"id":"e0bad382-c675-4dc8-b64b-59afdbc872c7","revision":0,"last_node_id":24,"last_link_id":36,"nodes":[{"id":13,"type":"PreviewAny","pos":[7306.8712563517365,2716.9456988415714],"size":[210,112],"flags":{},"order":7,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":15}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[16]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":15,"type":"PreviewAny","pos":[8493.047407984395,2812.077620777018],"size":[210,112],"flags":{},"order":6,"mode":4,"inputs":[{"localized_name":"source","name":"source","type":"*","link":18}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[19]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":10,"type":"StringConstant","pos":[8574.530129002482,2543.0326540533283],"size":[270,58],"flags":{},"order":0,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[18]}],"title":"Output path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["E:\\Ayurti\\Other\\Grid"],"color":"#322","bgcolor":"#533"},{"id":11,"type":"StringConstant","pos":[8263.599244930041,2543.4377080150157],"size":[270,58],"flags":{},"order":1,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[15]}],"title":"Input path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["E:\\Ayurti\\Other\\Grid"],"color":"#322","bgcolor":"#533"},{"id":4,"type":"PreviewImage","pos":[8783.672916023424,2703.0615475470763],"size":[529.2698539339362,544.9360126041029],"flags":{},"order":12,"mode":4,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":3}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewImage"},"widgets_values":[]},{"id":20,"type":"VHS_LoadImagesPath","pos":[6928.578131786765,2757.1095646279387],"size":[247.98828125,592.8756868131868],"flags":{},"order":2,"mode":0,"inputs":[{"localized_name":"meta_batch","name":"meta_batch","shape":7,"type":"VHS_BatchManager","link":null},{"localized_name":"directory","name":"directory","type":"STRING","widget":{"name":"directory"},"link":null},{"localized_name":"image_load_cap","name":"image_load_cap","shape":7,"type":"INT","widget":{"name":"image_load_cap"},"link":null},{"localized_name":"skip_first_images","name":"skip_first_images","shape":7,"type":"INT","widget":{"name":"skip_first_images"},"link":null},{"localized_name":"select_every_nth","name":"select_every_nth","shape":7,"type":"INT","widget":{"name":"select_every_nth"},"link":null}],"outputs":[{"localized_name":"IMAGE","name":"IMAGE","type":"IMAGE","links":[35]},{"localized_name":"MASK","name":"MASK","type":"MASK","links":null},{"localized_name":"frame_count","name":"frame_count","type":"INT","links":null}],"properties":{"cnr_id":"comfyui-videohelpersuite","ver":"2984ec4c4b93292421888f38db74a5e8802a8ff8","Node name for S&R":"VHS_LoadImagesPath"},"widgets_values":{"directory":"E:\\Ayurti\\Other\\Grid\\2","image_load_cap":0,"skip_first_images":0,"select_every_nth":1,"videopreview":{"hidden":false,"paused":true,"params":{"image_load_cap":0,"skip_first_images":0,"select_every_nth":1,"filename":"E:\\Ayurti\\Other\\Grid\\2","type":"path","format":"folder"}}}},{"id":23,"type":"VHS_LoadImagesPath","pos":[6631.437036200356,2753.1664349491666],"size":[247.98828125,592.8756868131868],"flags":{},"order":3,"mode":0,"inputs":[{"localized_name":"meta_batch","name":"meta_batch","shape":7,"type":"VHS_BatchManager","link":null},{"localized_name":"directory","name":"directory","type":"STRING","widget":{"name":"directory"},"link":null},{"localized_name":"image_load_cap","name":"image_load_cap","shape":7,"type":"INT","widget":{"name":"image_load_cap"},"link":null},{"localized_name":"skip_first_images","name":"skip_first_images","shape":7,"type":"INT","widget":{"name":"skip_first_images"},"link":null},{"localized_name":"select_every_nth","name":"select_every_nth","shape":7,"type":"INT","widget":{"name":"select_every_nth"},"link":null}],"outputs":[{"localized_name":"IMAGE","name":"IMAGE","type":"IMAGE","links":[33]},{"localized_name":"MASK","name":"MASK","type":"MASK","links":null},{"localized_name":"frame_count","name":"frame_count","type":"INT","links":null}],"properties":{"cnr_id":"comfyui-videohelpersuite","ver":"2984ec4c4b93292421888f38db74a5e8802a8ff8","Node name for S&R":"VHS_LoadImagesPath"},"widgets_values":{"directory":"E:\\Ayurti\\Other\\Grid\\1","image_load_cap":0,"skip_first_images":0,"select_every_nth":1,"videopreview":{"hidden":false,"paused":true,"params":{"image_load_cap":0,"skip_first_images":0,"select_every_nth":1,"filename":"E:\\Ayurti\\Other\\Grid\\1","type":"path","format":"folder"}}}},{"id":1,"type":"VishwaGeminiNanoBananaImage","pos":[8013.7823111260595,2775.6319130104634],"size":[423.4524131367907,404],"flags":{},"order":10,"mode":4,"inputs":[{"localized_name":"images","name":"images","shape":7,"type":"IMAGE","link":36},{"localized_name":"image_list","name":"image_list","shape":7,"type":"VISHWA_IMAGE_LIST","link":null},{"localized_name":"image_1","name":"image_1","shape":7,"type":"IMAGE","link":null},{"localized_name":"image_2","name":"image_2","shape":7,"type":"IMAGE","link":null},{"localized_name":"image_3","name":"image_3","shape":7,"type":"IMAGE","link":null},{"localized_name":"image_4","name":"image_4","shape":7,"type":"IMAGE","link":null},{"localized_name":"prompt","name":"prompt","type":"STRING","widget":{"name":"prompt"},"link":null},{"localized_name":"model_preset","name":"model_preset","type":"COMBO","widget":{"name":"model_preset"},"link":null},{"localized_name":"custom_model","name":"custom_model","type":"STRING","widget":{"name":"custom_model"},"link":null},{"localized_name":"aspect_ratio","name":"aspect_ratio","type":"COMBO","widget":{"name":"aspect_ratio"},"link":null},{"localized_name":"image_size","name":"image_size","type":"COMBO","widget":{"name":"image_size"},"link":null},{"localized_name":"thinking_level","name":"thinking_level","type":"COMBO","widget":{"name":"thinking_level"},"link":null},{"localized_name":"use_google_search","name":"use_google_search","type":"BOOLEAN","widget":{"name":"use_google_search"},"link":null},{"localized_name":"number_of_images","name":"number_of_images","type":"INT","widget":{"name":"number_of_images"},"link":null},{"localized_name":"seed","name":"seed","type":"INT","widget":{"name":"seed"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[3,10]},{"localized_name":"response_text","name":"response_text","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"7ab59ed4edcfba83008b11b44967ec6a72125342","Node name for S&R":"VishwaGeminiNanoBananaImage"},"widgets_values":["Replace the product images in the image 3 grid in the same look (1st row with small, large, small and 2nd row with large, small, large) with the product images attached. Each product has 3 images each for the 2 rows.","Nano Banana Pro","","3:2","4K","default",false,1,6,"increment"]},{"id":2,"type":"VishwaSaveImagePath","pos":[8461.49040322063,3008.2053619961853],"size":[270,174],"flags":{},"order":13,"mode":4,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":10},{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":19},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"overwrite","name":"overwrite","type":"BOOLEAN","widget":{"name":"overwrite"},"link":null},{"localized_name":"quality","name":"quality","type":"INT","widget":{"name":"quality"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":null},{"localized_name":"saved_paths","name":"saved_paths","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"7ab59ed4edcfba83008b11b44967ec6a72125342","Node name for S&R":"VishwaSaveImagePath"},"widgets_values":["C:\\Users\\VISHWA\\Desktop\\Influencer","upscaled_","png",false,100]},{"id":24,"type":"BatchImagesNode","pos":[7340.802987631317,3564.1059786813366],"size":[230.67261309472542,106],"flags":{},"order":9,"mode":0,"inputs":[{"label":"image0","localized_name":"images.image0","name":"images.image0","type":"IMAGE","link":32},{"label":"image1","localized_name":"images.image1","name":"images.image1","type":"IMAGE","link":33},{"label":"image2","localized_name":"images.image2","name":"images.image2","shape":7,"type":"IMAGE","link":35},{"label":"image3","localized_name":"images.image3","name":"images.image3","shape":7,"type":"IMAGE","link":null}],"outputs":[{"localized_name":"IMAGE","name":"IMAGE","type":"IMAGE","links":[34]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"BatchImagesNode"},"widgets_values":[]},{"id":22,"type":"PreviewImage","pos":[7759.549727370926,3579.942785844614],"size":[503.8689786538898,322.3706409261108],"flags":{},"order":11,"mode":0,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":34}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewImage"},"widgets_values":[]},{"id":12,"type":"Fast Groups Bypasser (rgthree)","pos":[7991.581405645887,2534.519090333568],"size":[247.2955078125,58],"flags":{},"order":4,"mode":0,"inputs":[],"outputs":[{"name":"OPT_CONNECTION","type":"*","links":null}],"properties":{"matchColors":"","matchTitle":"","showNav":true,"showAllGraphs":false,"sort":"position","customSortAlphabet":"","toggleRestriction":"default"},"color":"#232","bgcolor":"#353"},{"id":18,"type":"ImageBatchMulti","pos":[7379.394273190502,3294.279172261388],"size":[270,142],"flags":{},"order":5,"mode":0,"inputs":[{"localized_name":"image_1","name":"image_1","type":"IMAGE","link":null},{"localized_name":"image_2","name":"image_2","shape":7,"type":"IMAGE","link":null},{"localized_name":"inputcount","name":"inputcount","type":"INT","widget":{"name":"inputcount"},"link":null},{"name":"image_3","shape":7,"type":"IMAGE","link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"ImageBatchMulti"},"widgets_values":[3,null]},{"id":7,"type":"VishwaLoadImageBrowserPath","pos":[7577.473070008382,2678.976020781192],"size":[321.480078125,558],"flags":{},"order":8,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":16},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[32,36]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"7ab59ed4edcfba83008b11b44967ec6a72125342","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["E:\\Ayurti\\Other","","any","WhatsApp Image 2026-05-01 at 9.51.58 PM (1).jpeg","","refresh"],"color":"#322","bgcolor":"#533"}],"links":[[3,1,0,4,0,"IMAGE"],[10,1,0,2,0,"IMAGE"],[15,11,0,13,0,"STRING"],[16,13,0,7,0,"STRING"],[18,10,0,15,0,"STRING"],[19,15,0,2,1,"STRING"],[32,7,0,24,0,"IMAGE"],[33,23,0,24,1,"IMAGE"],[34,24,0,22,0,"IMAGE"],[35,20,0,24,2,"IMAGE"],[36,7,0,1,0,"IMAGE"]],"groups":[{"id":1,"title":"Upscale","bounding":[7970.61389826117,2633.928673858847,1383.5987558785864,628.5360126041029],"color":"#3f789e","font_size":24,"flags":{}}],"config":{},"extra":{"ds":{"scale":0.7400249944258315,"offset":[-7398.776366818459,-2191.71956255462]}},"version":0.4}
+{
+  "id": "e0bad382-c675-4dc8-b64b-59afdbc872c7",
+  "revision": 0,
+  "last_node_id": 24,
+  "last_link_id": 36,
+  "nodes": [
+    {
+      "id": 13,
+      "type": "PreviewAny",
+      "pos": [
+        7306.8712563517365,
+        2716.9456988415714
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 15,
+      "type": "PreviewAny",
+      "pos": [
+        8493.047407984395,
+        2812.077620777018
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 10,
+      "type": "StringConstant",
+      "pos": [
+        8574.530129002482,
+        2543.0326540533283
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "title": "Output path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/product_01/mockup"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 11,
+      "type": "StringConstant",
+      "pos": [
+        8263.599244930041,
+        2543.4377080150157
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "title": "Input path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/product_01/mockup"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 4,
+      "type": "PreviewImage",
+      "pos": [
+        8783.672916023424,
+        2703.0615475470763
+      ],
+      "size": [
+        529.2698539339362,
+        544.9360126041029
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "VHS_LoadImagesPath",
+      "pos": [
+        6928.578131786765,
+        2757.1095646279387
+      ],
+      "size": [
+        247.98828125,
+        592.8756868131868
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "meta_batch",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "localized_name": "directory",
+          "name": "directory",
+          "type": "STRING",
+          "widget": {
+            "name": "directory"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_load_cap",
+          "name": "image_load_cap",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "image_load_cap"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "skip_first_images",
+          "name": "skip_first_images",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "skip_first_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "select_every_nth",
+          "name": "select_every_nth",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "select_every_nth"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            35
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "frame_count",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "2984ec4c4b93292421888f38db74a5e8802a8ff8",
+        "Node name for S&R": "VHS_LoadImagesPath"
+      },
+      "widgets_values": [
+        "directory",
+        "image_load_cap",
+        "skip_first_images",
+        "select_every_nth",
+        "videopreview"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "VHS_LoadImagesPath",
+      "pos": [
+        6631.437036200356,
+        2753.1664349491666
+      ],
+      "size": [
+        247.98828125,
+        592.8756868131868
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "meta_batch",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "localized_name": "directory",
+          "name": "directory",
+          "type": "STRING",
+          "widget": {
+            "name": "directory"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_load_cap",
+          "name": "image_load_cap",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "image_load_cap"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "skip_first_images",
+          "name": "skip_first_images",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "skip_first_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "select_every_nth",
+          "name": "select_every_nth",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "select_every_nth"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "frame_count",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "2984ec4c4b93292421888f38db74a5e8802a8ff8",
+        "Node name for S&R": "VHS_LoadImagesPath"
+      },
+      "widgets_values": [
+        "directory",
+        "image_load_cap",
+        "skip_first_images",
+        "select_every_nth",
+        "videopreview"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "VishwaGeminiNanoBananaImage",
+      "pos": [
+        8013.7823111260595,
+        2775.6319130104634
+      ],
+      "size": [
+        423.4524131367907,
+        404
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "localized_name": "image_list",
+          "name": "image_list",
+          "shape": 7,
+          "type": "VISHWA_IMAGE_LIST",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model_preset",
+          "name": "model_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_size",
+          "name": "image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "image_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_level",
+          "name": "thinking_level",
+          "type": "COMBO",
+          "widget": {
+            "name": "thinking_level"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "use_google_search",
+          "name": "use_google_search",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "use_google_search"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "number_of_images",
+          "name": "number_of_images",
+          "type": "INT",
+          "widget": {
+            "name": "number_of_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            3,
+            10
+          ]
+        },
+        {
+          "localized_name": "response_text",
+          "name": "response_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "7ab59ed4edcfba83008b11b44967ec6a72125342",
+        "Node name for S&R": "VishwaGeminiNanoBananaImage"
+      },
+      "widgets_values": [
+        "Replace the product images in the image 3 grid in the same look (1st row with small, large, small and 2nd row with large, small, large) with the product images attached. Each product has 3 images each for the 2 rows.",
+        "Nano Banana Pro",
+        "",
+        "3:2",
+        "4K",
+        "default",
+        false,
+        1,
+        6,
+        "increment"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VishwaSaveImagePath",
+      "pos": [
+        8461.49040322063,
+        3008.2053619961853
+      ],
+      "size": [
+        270,
+        174
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 19
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "INT",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "saved_paths",
+          "name": "saved_paths",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "7ab59ed4edcfba83008b11b44967ec6a72125342",
+        "Node name for S&R": "VishwaSaveImagePath"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/base",
+        "upscaled_",
+        "png",
+        false,
+        100
+      ]
+    },
+    {
+      "id": 24,
+      "type": "BatchImagesNode",
+      "pos": [
+        7340.802987631317,
+        3564.1059786813366
+      ],
+      "size": [
+        230.67261309472542,
+        106
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image0",
+          "localized_name": "images.image0",
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 32
+        },
+        {
+          "label": "image1",
+          "localized_name": "images.image1",
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "label": "image2",
+          "localized_name": "images.image2",
+          "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 35
+        },
+        {
+          "label": "image3",
+          "localized_name": "images.image3",
+          "name": "images.image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "PreviewImage",
+      "pos": [
+        7759.549727370926,
+        3579.942785844614
+      ],
+      "size": [
+        503.8689786538898,
+        322.3706409261108
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        7991.581405645887,
+        2534.519090333568
+      ],
+      "size": [
+        247.2955078125,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 18,
+      "type": "ImageBatchMulti",
+      "pos": [
+        7379.394273190502,
+        3294.279172261388
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "inputcount",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "ImageBatchMulti"
+      },
+      "widgets_values": [
+        3,
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        7577.473070008382,
+        2678.976020781192
+      ],
+      "size": [
+        321.480078125,
+        558
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 16
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            32,
+            36
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "7ab59ed4edcfba83008b11b44967ec6a72125342",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/product_01/mockup",
+        "",
+        "any",
+        "WhatsApp Image 2026-05-01 at 9.51.58 PM (1).jpeg",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    }
+  ],
+  "links": [
+    [
+      3,
+      1,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      11,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      16,
+      13,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      18,
+      10,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      19,
+      15,
+      0,
+      2,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      7,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      23,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      34,
+      24,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      20,
+      0,
+      24,
+      2,
+      "IMAGE"
+    ],
+    [
+      36,
+      7,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Upscale",
+      "bounding": [
+        7970.61389826117,
+        2633.928673858847,
+        1383.5987558785864,
+        628.5360126041029
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7400249944258315,
+      "offset": [
+        -7398.776366818459,
+        -2191.71956255462
+      ]
+    }
+  },
+  "version": 0.4
+}

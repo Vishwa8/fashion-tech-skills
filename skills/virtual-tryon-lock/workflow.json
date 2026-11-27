@@ -1,1 +1,3152 @@
-{"id":"5502bbab-f580-4b71-be14-cc8bb08c6526","revision":0,"last_node_id":126,"last_link_id":170,"nodes":[{"id":36,"type":"VishwaSaveImagePath","pos":[9272.089274302427,1712.3145838577761],"size":[270,174],"flags":{},"order":42,"mode":0,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":43},{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":44},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":45},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"overwrite","name":"overwrite","type":"BOOLEAN","widget":{"name":"overwrite"},"link":null},{"localized_name":"quality","name":"quality","type":"INT","widget":{"name":"quality"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[]},{"localized_name":"saved_paths","name":"saved_paths","type":"STRING","links":[]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaSaveImagePath"},"widgets_values":["","front","png",false,100]},{"id":38,"type":"VishwaSaveImagePath","pos":[8977.581264658153,2585.080358266099],"size":[270,174],"flags":{},"order":39,"mode":4,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":46},{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":127},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":48},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"overwrite","name":"overwrite","type":"BOOLEAN","widget":{"name":"overwrite"},"link":null},{"localized_name":"quality","name":"quality","type":"INT","widget":{"name":"quality"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":null},{"localized_name":"saved_paths","name":"saved_paths","type":"STRING","links":[]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaSaveImagePath"},"widgets_values":["","back","png",false,100]},{"id":39,"type":"StringConcatenate","pos":[9016.25508975204,2807.047343729366],"size":[210,166],"flags":{},"order":28,"mode":4,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":49},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[48]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["back","","_"]},{"id":42,"type":"StringConcatenate","pos":[9303.678944837404,1928.3272583742412],"size":[210,166],"flags":{},"order":29,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":53},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[45]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["front","","_"]},{"id":97,"type":"StringConstant","pos":[4500.7602805874985,1529.877288342916],"size":[270,58],"flags":{},"order":0,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[98]}],"title":"Final mockup path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["\\mockup\\"]},{"id":99,"type":"SomethingToString","pos":[3567.3462195821658,1465.0170341027326],"size":[270,82],"flags":{},"order":10,"mode":0,"inputs":[{"localized_name":"input","name":"input","type":"*","link":108},{"localized_name":"prefix","name":"prefix","shape":7,"type":"STRING","widget":{"name":"prefix"},"link":null},{"localized_name":"suffix","name":"suffix","shape":7,"type":"STRING","widget":{"name":"suffix"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[105]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"SomethingToString"},"widgets_values":["",""]},{"id":102,"type":"StringConstant","pos":[4481.619150101179,1226.135657367387],"size":[270,58],"flags":{},"order":1,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[109]}],"title":"Product path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["E:\\Ayurti\\Products\\"]},{"id":96,"type":"StringConcatenate","pos":[3905.4652818641753,1410.583983212238],"size":[400,200],"flags":{},"order":12,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":105},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[107,110]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["Product ","",""]},{"id":106,"type":"PreviewAny","pos":[9001.564226508186,2418.4822543481773],"size":[210,112],"flags":{},"order":19,"mode":4,"inputs":[{"localized_name":"source","name":"source","type":"*","link":158}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[127]}],"title":"output_file_path","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":100,"type":"JoinStrings","pos":[4823.566004825319,1381.858147587813],"size":[270,78],"flags":{},"order":14,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":109},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":110},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[97,99]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":92,"type":"JoinStrings","pos":[5202.388700037574,1448.2271688765793],"size":[270,78],"flags":{},"order":15,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":97},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":98},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[123]}],"title":"Full Final mockup path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":83,"type":"PreviewImage","pos":[8518.990905491997,2466.7012745246925],"size":[424.5332885742191,454.26671142578107],"flags":{},"order":40,"mode":4,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":88}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewImage"},"widgets_values":[]},{"id":103,"type":"StringConstant","pos":[4491.367980587497,1391.6441883429163],"size":[270,58],"flags":{},"order":2,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[106]}],"title":"Temp prompt path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["E:\\Ayurti\\Docs\\Temp\\"]},{"id":40,"type":"VishwaGeminiNanoBananaImage","pos":[8077.501286554532,2465.3700774119193],"size":[391.8941765112304,446.5564099999999],"flags":{},"order":37,"mode":4,"inputs":[{"localized_name":"images","name":"images","shape":7,"type":"IMAGE","link":50},{"localized_name":"prompt","name":"prompt","type":"STRING","widget":{"name":"prompt"},"link":141},{"localized_name":"model_preset","name":"model_preset","type":"COMBO","widget":{"name":"model_preset"},"link":null},{"localized_name":"custom_model","name":"custom_model","type":"STRING","widget":{"name":"custom_model"},"link":null},{"localized_name":"aspect_ratio","name":"aspect_ratio","type":"COMBO","widget":{"name":"aspect_ratio"},"link":null},{"localized_name":"image_size","name":"image_size","type":"COMBO","widget":{"name":"image_size"},"link":null},{"localized_name":"thinking_level","name":"thinking_level","type":"COMBO","widget":{"name":"thinking_level"},"link":null},{"localized_name":"use_google_search","name":"use_google_search","type":"BOOLEAN","widget":{"name":"use_google_search"},"link":null},{"localized_name":"number_of_images","name":"number_of_images","type":"INT","widget":{"name":"number_of_images"},"link":null},{"localized_name":"seed","name":"seed","type":"INT","widget":{"name":"seed"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[46,88]},{"localized_name":"response_text","name":"response_text","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaGeminiNanoBananaImage"},"widgets_values":["","Nano Banana Pro","","9:16","4K","default",false,1,512457920,"randomize"]},{"id":113,"type":"PreviewAny","pos":[6432.1305145568185,2458.1506768970894],"size":[210,112],"flags":{},"order":18,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":157}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[143]}],"title":"output_file_path","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":98,"type":"JoinStrings","pos":[5200.597107651169,1275.648606670051],"size":[270,78],"flags":{},"order":13,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":106},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":107},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[147,153]}],"title":"Full temp prompt path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":116,"type":"StringConcatenate","pos":[7204.390594150261,1682.8312464708958],"size":[210,166],"flags":{},"order":25,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":145},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[146]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["garment-desc","","_"]},{"id":35,"type":"PreviewAny","pos":[9290.59273858583,1526.0673090424937],"size":[210,112],"flags":{},"order":20,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":159}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[44]}],"title":"output_file_path","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":88,"type":"StringConstant","pos":[4761.118423362769,1941.9236908010027],"size":[270,58],"flags":{},"order":3,"mode":0,"inputs":[{"localized_name":"string","name":"string","type":"STRING","widget":{"name":"string"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[100]}],"title":"Adshoot base path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"StringConstant"},"widgets_values":["\\adshoot\\images\\base\\"]},{"id":93,"type":"JoinStrings","pos":[5205.733672781539,1650.3413135333938],"size":[270,78],"flags":{},"order":16,"mode":0,"inputs":[{"localized_name":"string1","name":"string1","shape":7,"type":"STRING","link":99},{"localized_name":"string2","name":"string2","shape":7,"type":"STRING","link":100},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[157,158,159]}],"title":"Full Adshoot base path","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"JoinStrings"},"widgets_values":[""]},{"id":111,"type":"StringConcatenate","pos":[7794.930235838531,2482.027327424188],"size":[210,166],"flags":{},"order":35,"mode":4,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":156},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[141]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["Back view fashion pose with same hair style, wearing the same dress -",""," "]},{"id":120,"type":"VishwaLoadText","pos":[7172.2655447277375,2789.290140030898],"size":[210,184],"flags":{},"order":31,"mode":4,"inputs":[{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":153},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":154},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"missing_behavior","name":"missing_behavior","type":"COMBO","widget":{"name":"missing_behavior"},"link":null},{"localized_name":"default_text","name":"default_text","type":"STRING","widget":{"name":"default_text"},"link":null}],"outputs":[{"localized_name":"text","name":"text","type":"STRING","links":[155]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"978a4ebf278018d57cb19ce5a56675837c811bcf","Node name for S&R":"VishwaLoadText"},"widgets_values":["","","txt","error",""]},{"id":119,"type":"StringConcatenate","pos":[7170.620704774571,2555.6015909505604],"size":[210,166],"flags":{},"order":26,"mode":4,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":152},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[154]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["garment-desc","","_"]},{"id":30,"type":"PreviewAny","pos":[6007.153103308727,1552.3820563827162],"size":[210,112],"flags":{},"order":17,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":123}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[128]}],"title":"output_file_path","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":75,"type":"PreviewAny","pos":[6001.774026451844,1746.0761974074017],"size":[210,112],"flags":{},"order":24,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":129}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[49,53]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":117,"type":"VishwaLoadText","pos":[7209.173862480148,1913.3813671745131],"size":[210,184],"flags":{},"order":30,"mode":0,"inputs":[{"localized_name":"output_file_path","name":"output_file_path","type":"STRING","widget":{"name":"output_file_path"},"link":147},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":146},{"localized_name":"file_extension","name":"file_extension","type":"COMBO","widget":{"name":"file_extension"},"link":null},{"localized_name":"missing_behavior","name":"missing_behavior","type":"COMBO","widget":{"name":"missing_behavior"},"link":null},{"localized_name":"default_text","name":"default_text","type":"STRING","widget":{"name":"default_text"},"link":null}],"outputs":[{"localized_name":"text","name":"text","type":"STRING","links":[148]}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"978a4ebf278018d57cb19ce5a56675837c811bcf","Node name for S&R":"VishwaLoadText"},"widgets_values":["","","txt","default_text",""]},{"id":16,"type":"PreviewImage","pos":[8832.933516275583,1569.3689391473747],"size":[424.5332885742191,454.26671142578107],"flags":{},"order":41,"mode":0,"inputs":[{"localized_name":"images","name":"images","type":"IMAGE","link":21}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewImage"},"widgets_values":[]},{"id":87,"type":"ImageBatchMulti","pos":[7148.3720648957,1520.2996017317757],"size":[270,102],"flags":{},"order":23,"mode":0,"inputs":[{"localized_name":"image_1","name":"image_1","type":"IMAGE","link":162},{"localized_name":"image_2","name":"image_2","shape":7,"type":"IMAGE","link":138},{"localized_name":"inputcount","name":"inputcount","type":"INT","widget":{"name":"inputcount"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[137]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"ImageBatchMulti"},"widgets_values":[2,null]},{"id":121,"type":"PreviewAny","pos":[7409.563808624804,2473.9760253619556],"size":[344.67400808901493,460.05879872612604],"flags":{},"order":33,"mode":4,"inputs":[{"localized_name":"source","name":"source","type":"*","link":155}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[156]}],"title":"Prompt","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":41,"type":"ImageBatchMulti","pos":[7810.186882152648,2716.5601217113294],"size":[210,102],"flags":{},"order":27,"mode":4,"inputs":[{"localized_name":"image_1","name":"image_1","type":"IMAGE","link":144},{"localized_name":"image_2","name":"image_2","shape":7,"type":"IMAGE","link":139},{"localized_name":"inputcount","name":"inputcount","type":"INT","widget":{"name":"inputcount"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[50]}],"properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"ImageBatchMulti"},"widgets_values":[2,null]},{"id":81,"type":"VishwaGeminiNanoBananaImage","pos":[8380.278557507305,1562.017921399327],"size":[391.8941765112304,446.5564099999999],"flags":{},"order":38,"mode":0,"inputs":[{"localized_name":"images","name":"images","shape":7,"type":"IMAGE","link":137},{"localized_name":"prompt","name":"prompt","type":"STRING","widget":{"name":"prompt"},"link":165},{"localized_name":"model_preset","name":"model_preset","type":"COMBO","widget":{"name":"model_preset"},"link":null},{"localized_name":"custom_model","name":"custom_model","type":"STRING","widget":{"name":"custom_model"},"link":null},{"localized_name":"aspect_ratio","name":"aspect_ratio","type":"COMBO","widget":{"name":"aspect_ratio"},"link":null},{"localized_name":"image_size","name":"image_size","type":"COMBO","widget":{"name":"image_size"},"link":null},{"localized_name":"thinking_level","name":"thinking_level","type":"COMBO","widget":{"name":"thinking_level"},"link":null},{"localized_name":"use_google_search","name":"use_google_search","type":"BOOLEAN","widget":{"name":"use_google_search"},"link":null},{"localized_name":"number_of_images","name":"number_of_images","type":"INT","widget":{"name":"number_of_images"},"link":null},{"localized_name":"seed","name":"seed","type":"INT","widget":{"name":"seed"},"link":null}],"outputs":[{"localized_name":"images","name":"images","type":"IMAGE","links":[21,43]},{"localized_name":"response_text","name":"response_text","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"dafeb1ea22cb13158b8f8d5853e5fa443b46282b","Node name for S&R":"VishwaGeminiNanoBananaImage"},"widgets_values":["Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's red dress with the uploaded green dress reference keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair, expression, jewelry, hands, pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the garment faithfully: rich emerald green viscose fabric, deep narrow V neckline with centered teardrop keyhole opening, 3/4 balloon sleeves gathered into fitted cuffs, fitted bodice, no ruffles, no straps, no waist seam, long flowing full-length A-line/midi skirt, realistic fabric folds and natural drape.\n\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n","Nano Banana Pro","","9:16","4K","default",false,1,2133800745,"randomize"]},{"id":107,"type":"VishwaLoadImageBrowserPath","pos":[6318.808623806401,1513.4008805699164],"size":[338.09335779687206,558],"flags":{},"order":21,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":128},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[138,139]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":[129,145,152]},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"a818dc243834ccd2494506f40225dca93ac2141d","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["","","any","mockup-v5.png","","refresh"],"color":"#322","bgcolor":"#533"},{"id":112,"type":"VishwaLoadImageBrowserPath","pos":[6706.879271542948,2409.218445234263],"size":[321.480078125,558],"flags":{},"order":22,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":143},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[144]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"978a4ebf278018d57cb19ce5a56675837c811bcf","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["","front_","any","front_mockup-v5.png","","refresh"],"color":"#322","bgcolor":"#533"},{"id":105,"type":"INTConstant","pos":[7476.756839096406,1332.7212528431019],"size":[210,58],"flags":{},"order":4,"mode":0,"inputs":[{"localized_name":"value","name":"value","type":"INT","widget":{"name":"value"},"link":null}],"outputs":[{"localized_name":"value","name":"value","type":"INT","links":[108]}],"title":"Product Number","properties":{"cnr_id":"comfyui-kjnodes","ver":"38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4","Node name for S&R":"INTConstant"},"widgets_values":[7],"color":"#1b4669","bgcolor":"#29699c"},{"id":123,"type":"VishwaLoadImageBrowserPath","pos":[6732.545697184004,1504.257635162936],"size":[321.480078125,558],"flags":{},"order":5,"mode":0,"inputs":[{"localized_name":"input_file_path","name":"input_file_path","type":"STRING","widget":{"name":"input_file_path"},"link":null},{"localized_name":"file_name","name":"file_name","type":"STRING","widget":{"name":"file_name"},"link":null},{"localized_name":"extension_filter","name":"extension_filter","type":"COMBO","widget":{"name":"extension_filter"},"link":null},{"localized_name":"selected_file","name":"selected_file","type":"COMBO","widget":{"name":"selected_file"},"link":null}],"outputs":[{"localized_name":"image","name":"image","type":"IMAGE","links":[162]},{"localized_name":"mask","name":"mask","type":"MASK","links":null},{"localized_name":"resolved_file_path","name":"resolved_file_path","type":"STRING","links":null},{"localized_name":"resolved_file_name","name":"resolved_file_name","type":"STRING","links":null},{"localized_name":"resolved_file_extension","name":"resolved_file_extension","type":"STRING","links":null}],"properties":{"aux_id":"Vishwa8/vishwa","ver":"8eb0316aaee44451195653d63806dacf63e1e30b","Node name for S&R":"VishwaLoadImageBrowserPath"},"widgets_values":["E:\\Ayurti\\Base\\variants\\masked","","any","clipspace-painted-masked-1777138816002.png","","refresh"],"color":"#322","bgcolor":"#533"},{"id":122,"type":"Fast Groups Bypasser (rgthree)","pos":[7171.571895610005,2235.799896983002],"size":[247.2955078125,106],"flags":{},"order":6,"mode":0,"inputs":[],"outputs":[{"name":"OPT_CONNECTION","type":"*","links":null}],"properties":{"matchColors":"","matchTitle":"","showNav":true,"showAllGraphs":false,"sort":"position","customSortAlphabet":"","toggleRestriction":"max one"}},{"id":76,"type":"Fast Groups Bypasser (rgthree)","pos":[7160.273089713306,1315.0361822239772],"size":[247.2955078125,106],"flags":{},"order":7,"mode":0,"inputs":[],"outputs":[{"name":"OPT_CONNECTION","type":"*","links":null}],"properties":{"matchColors":"","matchTitle":"","showNav":true,"showAllGraphs":false,"sort":"position","customSortAlphabet":"","toggleRestriction":"max one"},"color":"#232","bgcolor":"#353"},{"id":125,"type":"PrimitiveStringMultiline","pos":[7794.624421703508,1229.9323345697044],"size":[401.8301250000004,196.3397500000001],"flags":{},"order":8,"mode":0,"inputs":[{"localized_name":"value","name":"value","type":"STRING","widget":{"name":"value"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[166]}],"title":"Changes","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PrimitiveStringMultiline"},"widgets_values":[""],"color":"#322","bgcolor":"#533"},{"id":118,"type":"PreviewAny","pos":[7506.8418944063405,1873.5481140277666],"size":[342.4012808162879,177.10425327158055],"flags":{},"order":32,"mode":0,"inputs":[{"localized_name":"source","name":"source","type":"*","link":148}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[149]}],"title":"Dress","properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"PreviewAny"},"widgets_values":[null,null,null]},{"id":9,"type":"StringConcatenate","pos":[7509.983271277599,1581.7713428012532],"size":[357.90712500000063,192.67949999999996],"flags":{},"order":34,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":149},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[169]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's red dress with the uploaded dress reference keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair, expression, jewelry, hands, pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the garment faithfully:",""," "]},{"id":126,"type":"StringConcatenate","pos":[8147.348171703513,1858.2325845697044],"size":[210,166],"flags":{},"order":8,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":169},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":168},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[170]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["","",""]},{"id":17,"type":"StringConcatenate","pos":[7920.302243850708,1581.5085794844592],"size":[400,200],"flags":{},"order":36,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":170},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":null},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[165]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["","\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n\nFollowing is the details of the garment in which you can get the precise technical details of the garment."," "]},{"id":124,"type":"StringConcatenate","pos":[7898.94154670351,1867.8735845697054],"size":[210,166],"flags":{},"order":11,"mode":0,"inputs":[{"localized_name":"string_a","name":"string_a","type":"STRING","widget":{"name":"string_a"},"link":null},{"localized_name":"string_b","name":"string_b","type":"STRING","widget":{"name":"string_b"},"link":166},{"localized_name":"delimiter","name":"delimiter","type":"STRING","widget":{"name":"delimiter"},"link":null}],"outputs":[{"localized_name":"STRING","name":"STRING","type":"STRING","links":[168]}],"properties":{"cnr_id":"comfy-core","ver":"0.19.1","Node name for S&R":"StringConcatenate"},"widgets_values":["\nAdditionol Notes:",""," "]}],"links":[[21,81,0,16,0,"IMAGE"],[43,81,0,36,0,"IMAGE"],[44,35,0,36,1,"STRING"],[45,42,0,36,2,"STRING"],[46,40,0,38,0,"IMAGE"],[48,39,0,38,2,"STRING"],[49,75,0,39,1,"STRING"],[50,41,0,40,0,"IMAGE"],[53,75,0,42,1,"STRING"],[88,40,0,83,0,"IMAGE"],[97,100,0,92,0,"STRING"],[98,97,0,92,1,"STRING"],[99,100,0,93,0,"STRING"],[100,88,0,93,1,"STRING"],[105,99,0,96,1,"STRING"],[106,103,0,98,0,"STRING"],[107,96,0,98,1,"STRING"],[108,105,0,99,0,"INT"],[109,102,0,100,0,"STRING"],[110,96,0,100,1,"STRING"],[123,92,0,30,0,"STRING"],[127,106,0,38,1,"STRING"],[128,30,0,107,0,"STRING"],[129,107,3,75,0,"STRING"],[137,87,0,81,0,"IMAGE"],[138,107,0,87,1,"IMAGE"],[139,107,0,41,1,"IMAGE"],[141,111,0,40,1,"STRING"],[143,113,0,112,0,"STRING"],[144,112,0,41,0,"IMAGE"],[145,107,3,116,1,"STRING"],[146,116,0,117,1,"STRING"],[147,98,0,117,0,"STRING"],[148,117,0,118,0,"STRING"],[149,118,0,9,1,"STRING"],[152,107,3,119,1,"STRING"],[153,98,0,120,0,"STRING"],[154,119,0,120,1,"STRING"],[155,120,0,121,0,"STRING"],[156,121,0,111,1,"STRING"],[157,93,0,113,0,"STRING"],[158,93,0,106,0,"STRING"],[159,93,0,35,0,"STRING"],[162,123,0,87,0,"IMAGE"],[165,17,0,81,1,"STRING"],[166,125,0,124,1,"STRING"],[168,124,0,126,1,"STRING"],[169,9,0,126,0,"STRING"],[170,126,0,17,0,"STRING"]],"groups":[{"id":4,"title":"Front Base","bounding":[7138.3720648957,1446.6996017317758,2413.7172094067273,660.6817654427372],"color":"#653","font_size":24,"flags":{}},{"id":5,"title":"Back Base","bounding":[7132.374849384081,2344.8822543481774,2125.206415274074,638.1650893811885],"color":"#3f789e","font_size":24,"flags":{}}],"config":{},"extra":{"ds":{"scale":0.6830134553650706,"offset":[-7182.048921703502,-1120.7338404290788]}},"version":0.4}
+{
+  "id": "5502bbab-f580-4b71-be14-cc8bb08c6526",
+  "revision": 0,
+  "last_node_id": 126,
+  "last_link_id": 170,
+  "nodes": [
+    {
+      "id": 36,
+      "type": "VishwaSaveImagePath",
+      "pos": [
+        9272.089274302427,
+        1712.3145838577761
+      ],
+      "size": [
+        270,
+        174
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 43
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 44
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 45
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "INT",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "saved_paths",
+          "name": "saved_paths",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaSaveImagePath"
+      },
+      "widgets_values": [
+        "",
+        "front",
+        "png",
+        false,
+        100
+      ]
+    },
+    {
+      "id": 38,
+      "type": "VishwaSaveImagePath",
+      "pos": [
+        8977.581264658153,
+        2585.080358266099
+      ],
+      "size": [
+        270,
+        174
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 46
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 127
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 48
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "INT",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "saved_paths",
+          "name": "saved_paths",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaSaveImagePath"
+      },
+      "widgets_values": [
+        "",
+        "back",
+        "png",
+        false,
+        100
+      ]
+    },
+    {
+      "id": 39,
+      "type": "StringConcatenate",
+      "pos": [
+        9016.25508975204,
+        2807.047343729366
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 49
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            48
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "back",
+        "",
+        "_"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "StringConcatenate",
+      "pos": [
+        9303.678944837404,
+        1928.3272583742412
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 53
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            45
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "front",
+        "",
+        "_"
+      ]
+    },
+    {
+      "id": 97,
+      "type": "StringConstant",
+      "pos": [
+        4500.7602805874985,
+        1529.877288342916
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            98
+          ]
+        }
+      ],
+      "title": "Final mockup path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "\\mockup\\"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "SomethingToString",
+      "pos": [
+        3567.3462195821658,
+        1465.0170341027326
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input",
+          "name": "input",
+          "type": "*",
+          "link": 108
+        },
+        {
+          "localized_name": "prefix",
+          "name": "prefix",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "suffix",
+          "name": "suffix",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "suffix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            105
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "SomethingToString"
+      },
+      "widgets_values": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 102,
+      "type": "StringConstant",
+      "pos": [
+        4481.619150101179,
+        1226.135657367387
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            109
+          ]
+        }
+      ],
+      "title": "Product path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/products/"
+      ]
+    },
+    {
+      "id": 96,
+      "type": "StringConcatenate",
+      "pos": [
+        3905.4652818641753,
+        1410.583983212238
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 105
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            107,
+            110
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "Product ",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 106,
+      "type": "PreviewAny",
+      "pos": [
+        9001.564226508186,
+        2418.4822543481773
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 158
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127
+          ]
+        }
+      ],
+      "title": "output_file_path",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 100,
+      "type": "JoinStrings",
+      "pos": [
+        4823.566004825319,
+        1381.858147587813
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 109
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 110
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            97,
+            99
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 92,
+      "type": "JoinStrings",
+      "pos": [
+        5202.388700037574,
+        1448.2271688765793
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 97
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 98
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            123
+          ]
+        }
+      ],
+      "title": "Full Final mockup path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 83,
+      "type": "PreviewImage",
+      "pos": [
+        8518.990905491997,
+        2466.7012745246925
+      ],
+      "size": [
+        424.5332885742191,
+        454.26671142578107
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 88
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 103,
+      "type": "StringConstant",
+      "pos": [
+        4491.367980587497,
+        1391.6441883429163
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            106
+          ]
+        }
+      ],
+      "title": "Temp prompt path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/docs/templates/"
+      ]
+    },
+    {
+      "id": 40,
+      "type": "VishwaGeminiNanoBananaImage",
+      "pos": [
+        8077.501286554532,
+        2465.3700774119193
+      ],
+      "size": [
+        391.8941765112304,
+        446.5564099999999
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 50
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 141
+        },
+        {
+          "localized_name": "model_preset",
+          "name": "model_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_size",
+          "name": "image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "image_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_level",
+          "name": "thinking_level",
+          "type": "COMBO",
+          "widget": {
+            "name": "thinking_level"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "use_google_search",
+          "name": "use_google_search",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "use_google_search"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "number_of_images",
+          "name": "number_of_images",
+          "type": "INT",
+          "widget": {
+            "name": "number_of_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            46,
+            88
+          ]
+        },
+        {
+          "localized_name": "response_text",
+          "name": "response_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaGeminiNanoBananaImage"
+      },
+      "widgets_values": [
+        "Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's garment with the uploaded garment reference keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair parting and textured bun, expression, jewelry (antique gold jhumkas, rings), hands (anatomically correct 5 fingers), pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the garment faithfully: {{GARMENT_SPECIFICATIONS}}\n\nVisible textile weave, realistic fabric folds, natural drape weight, and authentic skin texture with natural pores. Do not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n\nNEGATIVE DIRECTIVES (STRICTLY FORBIDDEN):\nidentity drift, different person, generic face, altered smile, skin tone change, hairstyle change, loose hair, extra limbs, extra fingers, malformed hands, altered jewelry, background change, color shift, plastic skin, CGI, watermark, text.\n\nPHYSICAL INTEGRITY & 3WS COMPLIANCE:\n100% face identity lock, right-side hair parting, exact skin tone, 5 fingers per hand, and champagne pleated silk studio backdrop.\n",
+        "Nano Banana Pro",
+        "",
+        "9:16",
+        "4K",
+        "default",
+        false,
+        1,
+        512457920,
+        "randomize"
+      ]
+    },
+    {
+      "id": 113,
+      "type": "PreviewAny",
+      "pos": [
+        6432.1305145568185,
+        2458.1506768970894
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 157
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            143
+          ]
+        }
+      ],
+      "title": "output_file_path",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 98,
+      "type": "JoinStrings",
+      "pos": [
+        5200.597107651169,
+        1275.648606670051
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 106
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 107
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            147,
+            153
+          ]
+        }
+      ],
+      "title": "Full temp prompt path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 116,
+      "type": "StringConcatenate",
+      "pos": [
+        7204.390594150261,
+        1682.8312464708958
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 145
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            146
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "garment-desc",
+        "",
+        "_"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "PreviewAny",
+      "pos": [
+        9290.59273858583,
+        1526.0673090424937
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 159
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "title": "output_file_path",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 88,
+      "type": "StringConstant",
+      "pos": [
+        4761.118423362769,
+        1941.9236908010027
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            100
+          ]
+        }
+      ],
+      "title": "Adshoot base path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "StringConstant"
+      },
+      "widgets_values": [
+        "\\adshoot\\images\\base\\"
+      ]
+    },
+    {
+      "id": 93,
+      "type": "JoinStrings",
+      "pos": [
+        5205.733672781539,
+        1650.3413135333938
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string1",
+          "name": "string1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 99
+        },
+        {
+          "localized_name": "string2",
+          "name": "string2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 100
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            157,
+            158,
+            159
+          ]
+        }
+      ],
+      "title": "Full Adshoot base path",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 111,
+      "type": "StringConcatenate",
+      "pos": [
+        7794.930235838531,
+        2482.027327424188
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 156
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            141
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "Back view fashion pose with same hair style, wearing the same dress -",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 120,
+      "type": "VishwaLoadText",
+      "pos": [
+        7172.2655447277375,
+        2789.290140030898
+      ],
+      "size": [
+        210,
+        184
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 153
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 154
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "missing_behavior",
+          "name": "missing_behavior",
+          "type": "COMBO",
+          "widget": {
+            "name": "missing_behavior"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "default_text",
+          "name": "default_text",
+          "type": "STRING",
+          "widget": {
+            "name": "default_text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            155
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "978a4ebf278018d57cb19ce5a56675837c811bcf",
+        "Node name for S&R": "VishwaLoadText"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "txt",
+        "error",
+        ""
+      ]
+    },
+    {
+      "id": 119,
+      "type": "StringConcatenate",
+      "pos": [
+        7170.620704774571,
+        2555.6015909505604
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 152
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            154
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "garment-desc",
+        "",
+        "_"
+      ]
+    },
+    {
+      "id": 30,
+      "type": "PreviewAny",
+      "pos": [
+        6007.153103308727,
+        1552.3820563827162
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128
+          ]
+        }
+      ],
+      "title": "output_file_path",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 75,
+      "type": "PreviewAny",
+      "pos": [
+        6001.774026451844,
+        1746.0761974074017
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 129
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            49,
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 117,
+      "type": "VishwaLoadText",
+      "pos": [
+        7209.173862480148,
+        1913.3813671745131
+      ],
+      "size": [
+        210,
+        184
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": 147
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 146
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "missing_behavior",
+          "name": "missing_behavior",
+          "type": "COMBO",
+          "widget": {
+            "name": "missing_behavior"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "default_text",
+          "name": "default_text",
+          "type": "STRING",
+          "widget": {
+            "name": "default_text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            148
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "978a4ebf278018d57cb19ce5a56675837c811bcf",
+        "Node name for S&R": "VishwaLoadText"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "txt",
+        "default_text",
+        ""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": [
+        8832.933516275583,
+        1569.3689391473747
+      ],
+      "size": [
+        424.5332885742191,
+        454.26671142578107
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 87,
+      "type": "ImageBatchMulti",
+      "pos": [
+        7148.3720648957,
+        1520.2996017317757
+      ],
+      "size": [
+        270,
+        102
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 162
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 138
+        },
+        {
+          "localized_name": "inputcount",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            137
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "ImageBatchMulti"
+      },
+      "widgets_values": [
+        2,
+        null
+      ]
+    },
+    {
+      "id": 121,
+      "type": "PreviewAny",
+      "pos": [
+        7409.563808624804,
+        2473.9760253619556
+      ],
+      "size": [
+        344.67400808901493,
+        460.05879872612604
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            156
+          ]
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 41,
+      "type": "ImageBatchMulti",
+      "pos": [
+        7810.186882152648,
+        2716.5601217113294
+      ],
+      "size": [
+        210,
+        102
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 144
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 139
+        },
+        {
+          "localized_name": "inputcount",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            50
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "ImageBatchMulti"
+      },
+      "widgets_values": [
+        2,
+        null
+      ]
+    },
+    {
+      "id": 81,
+      "type": "VishwaGeminiNanoBananaImage",
+      "pos": [
+        8380.278557507305,
+        1562.017921399327
+      ],
+      "size": [
+        391.8941765112304,
+        446.5564099999999
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 137
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 165
+        },
+        {
+          "localized_name": "model_preset",
+          "name": "model_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image_size",
+          "name": "image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "image_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_level",
+          "name": "thinking_level",
+          "type": "COMBO",
+          "widget": {
+            "name": "thinking_level"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "use_google_search",
+          "name": "use_google_search",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "use_google_search"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "number_of_images",
+          "name": "number_of_images",
+          "type": "INT",
+          "widget": {
+            "name": "number_of_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            21,
+            43
+          ]
+        },
+        {
+          "localized_name": "response_text",
+          "name": "response_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "dafeb1ea22cb13158b8f8d5853e5fa443b46282b",
+        "Node name for S&R": "VishwaGeminiNanoBananaImage"
+      },
+      "widgets_values": [
+        "Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's garment with the uploaded garment reference keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair parting and textured bun, expression, jewelry (antique gold jhumkas, rings), hands (anatomically correct 5 fingers), pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the garment faithfully: {{GARMENT_SPECIFICATIONS}}\n\nVisible textile weave, realistic fabric folds, natural drape weight, and authentic skin texture with natural pores. Do not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n\nNEGATIVE DIRECTIVES (STRICTLY FORBIDDEN):\nidentity drift, different person, generic face, altered smile, skin tone change, hairstyle change, loose hair, extra limbs, extra fingers, malformed hands, altered jewelry, background change, color shift, plastic skin, CGI, watermark, text.\n\nPHYSICAL INTEGRITY & 3WS COMPLIANCE:\n100% face identity lock, right-side hair parting, exact skin tone, 5 fingers per hand, and champagne pleated silk studio backdrop.\n",
+        "Nano Banana Pro",
+        "",
+        "9:16",
+        "4K",
+        "default",
+        false,
+        1,
+        2133800745,
+        "randomize"
+      ]
+    },
+    {
+      "id": 107,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        6318.808623806401,
+        1513.4008805699164
+      ],
+      "size": [
+        338.09335779687206,
+        558
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 128
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            138,
+            139
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": [
+            129,
+            145,
+            152
+          ]
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "a818dc243834ccd2494506f40225dca93ac2141d",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "any",
+        "mockup-v5.png",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 112,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        6706.879271542948,
+        2409.218445234263
+      ],
+      "size": [
+        321.480078125,
+        558
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": 143
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            144
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "978a4ebf278018d57cb19ce5a56675837c811bcf",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "",
+        "front_",
+        "any",
+        "front_mockup-v5.png",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 105,
+      "type": "INTConstant",
+      "pos": [
+        7476.756839096406,
+        1332.7212528431019
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
+          "links": [
+            108
+          ]
+        }
+      ],
+      "title": "Product Number",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "38cccdee6a484a702e4ac1a8b9a3cee0c4ed83f4",
+        "Node name for S&R": "INTConstant"
+      },
+      "widgets_values": [
+        7
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 123,
+      "type": "VishwaLoadImageBrowserPath",
+      "pos": [
+        6732.545697184004,
+        1504.257635162936
+      ],
+      "size": [
+        321.480078125,
+        558
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "input_file_path",
+          "name": "input_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "input_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extension_filter",
+          "name": "extension_filter",
+          "type": "COMBO",
+          "widget": {
+            "name": "extension_filter"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selected_file",
+          "name": "selected_file",
+          "type": "COMBO",
+          "widget": {
+            "name": "selected_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            162
+          ]
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_path",
+          "name": "resolved_file_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_name",
+          "name": "resolved_file_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "resolved_file_extension",
+          "name": "resolved_file_extension",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Vishwa8/vishwa",
+        "ver": "8eb0316aaee44451195653d63806dacf63e1e30b",
+        "Node name for S&R": "VishwaLoadImageBrowserPath"
+      },
+      "widgets_values": [
+        "/mnt/1.9TB/Dev/ayuti/base",
+        "",
+        "any",
+        "clipspace-painted-masked-1777138816002.png",
+        "",
+        "refresh"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 122,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        7171.571895610005,
+        2235.799896983002
+      ],
+      "size": [
+        247.2955078125,
+        106
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "max one"
+      }
+    },
+    {
+      "id": 76,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        7160.273089713306,
+        1315.0361822239772
+      ],
+      "size": [
+        247.2955078125,
+        106
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "max one"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 125,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        7794.624421703508,
+        1229.9323345697044
+      ],
+      "size": [
+        401.8301250000004,
+        196.3397500000001
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            166
+          ]
+        }
+      ],
+      "title": "Changes",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 118,
+      "type": "PreviewAny",
+      "pos": [
+        7506.8418944063405,
+        1873.5481140277666
+      ],
+      "size": [
+        342.4012808162879,
+        177.10425327158055
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 148
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            149
+          ]
+        }
+      ],
+      "title": "Dress",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 9,
+      "type": "StringConcatenate",
+      "pos": [
+        7509.983271277599,
+        1581.7713428012532
+      ],
+      "size": [
+        357.90712500000063,
+        192.67949999999996
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 149
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            169
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "Use the base image as the identity, pose, body, lighting, and scene source of truth. Replace only the masked model's red dress with the uploaded dress reference keeping everything else the same.\n\nPreserve the exact same woman, face, skin tone, hair, expression, jewelry, hands, pose, body proportions, camera angle, full-body framing, cream satin draped background, floor drape, and sandals.\n\nTransfer the garment faithfully:",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 126,
+      "type": "StringConcatenate",
+      "pos": [
+        8147.348171703513,
+        1858.2325845697044
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 169
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 168
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            170
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "StringConcatenate",
+      "pos": [
+        7920.302243850708,
+        1581.5085794844592
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 170
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            165
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "\nDo not change identity, hairstyle, background, lighting, composition, or accessories. Photorealistic fashion catalog image.\n\nFollowing is the details of the garment in which you can get the precise technical details of the garment.",
+        " "
+      ]
+    },
+    {
+      "id": 124,
+      "type": "StringConcatenate",
+      "pos": [
+        7898.94154670351,
+        1867.8735845697054
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string_a",
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "string_b",
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 166
+        },
+        {
+          "localized_name": "delimiter",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            168
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "\nAdditionol Notes:",
+        "",
+        " "
+      ]
+    }
+  ],
+  "links": [
+    [
+      21,
+      81,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      43,
+      81,
+      0,
+      36,
+      0,
+      "IMAGE"
+    ],
+    [
+      44,
+      35,
+      0,
+      36,
+      1,
+      "STRING"
+    ],
+    [
+      45,
+      42,
+      0,
+      36,
+      2,
+      "STRING"
+    ],
+    [
+      46,
+      40,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      39,
+      0,
+      38,
+      2,
+      "STRING"
+    ],
+    [
+      49,
+      75,
+      0,
+      39,
+      1,
+      "STRING"
+    ],
+    [
+      50,
+      41,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      75,
+      0,
+      42,
+      1,
+      "STRING"
+    ],
+    [
+      88,
+      40,
+      0,
+      83,
+      0,
+      "IMAGE"
+    ],
+    [
+      97,
+      100,
+      0,
+      92,
+      0,
+      "STRING"
+    ],
+    [
+      98,
+      97,
+      0,
+      92,
+      1,
+      "STRING"
+    ],
+    [
+      99,
+      100,
+      0,
+      93,
+      0,
+      "STRING"
+    ],
+    [
+      100,
+      88,
+      0,
+      93,
+      1,
+      "STRING"
+    ],
+    [
+      105,
+      99,
+      0,
+      96,
+      1,
+      "STRING"
+    ],
+    [
+      106,
+      103,
+      0,
+      98,
+      0,
+      "STRING"
+    ],
+    [
+      107,
+      96,
+      0,
+      98,
+      1,
+      "STRING"
+    ],
+    [
+      108,
+      105,
+      0,
+      99,
+      0,
+      "INT"
+    ],
+    [
+      109,
+      102,
+      0,
+      100,
+      0,
+      "STRING"
+    ],
+    [
+      110,
+      96,
+      0,
+      100,
+      1,
+      "STRING"
+    ],
+    [
+      123,
+      92,
+      0,
+      30,
+      0,
+      "STRING"
+    ],
+    [
+      127,
+      106,
+      0,
+      38,
+      1,
+      "STRING"
+    ],
+    [
+      128,
+      30,
+      0,
+      107,
+      0,
+      "STRING"
+    ],
+    [
+      129,
+      107,
+      3,
+      75,
+      0,
+      "STRING"
+    ],
+    [
+      137,
+      87,
+      0,
+      81,
+      0,
+      "IMAGE"
+    ],
+    [
+      138,
+      107,
+      0,
+      87,
+      1,
+      "IMAGE"
+    ],
+    [
+      139,
+      107,
+      0,
+      41,
+      1,
+      "IMAGE"
+    ],
+    [
+      141,
+      111,
+      0,
+      40,
+      1,
+      "STRING"
+    ],
+    [
+      143,
+      113,
+      0,
+      112,
+      0,
+      "STRING"
+    ],
+    [
+      144,
+      112,
+      0,
+      41,
+      0,
+      "IMAGE"
+    ],
+    [
+      145,
+      107,
+      3,
+      116,
+      1,
+      "STRING"
+    ],
+    [
+      146,
+      116,
+      0,
+      117,
+      1,
+      "STRING"
+    ],
+    [
+      147,
+      98,
+      0,
+      117,
+      0,
+      "STRING"
+    ],
+    [
+      148,
+      117,
+      0,
+      118,
+      0,
+      "STRING"
+    ],
+    [
+      149,
+      118,
+      0,
+      9,
+      1,
+      "STRING"
+    ],
+    [
+      152,
+      107,
+      3,
+      119,
+      1,
+      "STRING"
+    ],
+    [
+      153,
+      98,
+      0,
+      120,
+      0,
+      "STRING"
+    ],
+    [
+      154,
+      119,
+      0,
+      120,
+      1,
+      "STRING"
+    ],
+    [
+      155,
+      120,
+      0,
+      121,
+      0,
+      "STRING"
+    ],
+    [
+      156,
+      121,
+      0,
+      111,
+      1,
+      "STRING"
+    ],
+    [
+      157,
+      93,
+      0,
+      113,
+      0,
+      "STRING"
+    ],
+    [
+      158,
+      93,
+      0,
+      106,
+      0,
+      "STRING"
+    ],
+    [
+      159,
+      93,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      162,
+      123,
+      0,
+      87,
+      0,
+      "IMAGE"
+    ],
+    [
+      165,
+      17,
+      0,
+      81,
+      1,
+      "STRING"
+    ],
+    [
+      166,
+      125,
+      0,
+      124,
+      1,
+      "STRING"
+    ],
+    [
+      168,
+      124,
+      0,
+      126,
+      1,
+      "STRING"
+    ],
+    [
+      169,
+      9,
+      0,
+      126,
+      0,
+      "STRING"
+    ],
+    [
+      170,
+      126,
+      0,
+      17,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 4,
+      "title": "Front Base",
+      "bounding": [
+        7138.3720648957,
+        1446.6996017317758,
+        2413.7172094067273,
+        660.6817654427372
+      ],
+      "color": "#653",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Back Base",
+      "bounding": [
+        7132.374849384081,
+        2344.8822543481774,
+        2125.206415274074,
+        638.1650893811885
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650706,
+      "offset": [
+        -7182.048921703502,
+        -1120.7338404290788
+      ]
+    }
+  },
+  "version": 0.4
+}
