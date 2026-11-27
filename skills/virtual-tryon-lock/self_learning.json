@@ -1,5 +1,5 @@
 {
-  "engine_version": "2.0.0",
+  "engine_version": "3.0.0",
   "protocol_ref": "skills/skill-organizer/protocol/3ws_self_learning_protocol.md",
   "governance_ref": "skills/skill-organizer/SKILL.md",
   "skill_id": "virtual-tryon-lock",
@@ -17,6 +17,11 @@
     {
       "pattern_id": "VT-WW-03",
       "description": "Lego-brick atomic inpainting via FLUX.1 Fill onto clean, unaccessorized SSOT base plates eliminates multi-garment hallucination and guarantees mathematical 0.0000% identity, scene, and accessory drift",
+      "confidence": 1.0
+    },
+    {
+      "pattern_id": "VT-WW-04",
+      "description": "Decoupled multi-layer architecture (Layer 0 Framing -> Layer 1 Scene/Lighting -> Layer 2 Base Canvas -> Layer 3 Beauty/Hair/Eyes -> Layer 4 Dress Bricks -> Layer 5 Jewelry -> Layer 6 Accessories) enables independent UGC vs Editorial scene switching and colorway swapping without re-rendering unaffected layers",
       "confidence": 1.0
     }
   ],
@@ -38,6 +43,12 @@
       "failure_mode": "Subtle facial bone structure and backdrop drift with multimodal Gemini/Nano Banana try-on",
       "root_cause": "Multimodal diffusion foundation models lack native pixel-locked binary inpaint masking, causing latent perturbation across unmasked regions",
       "drift_vector": "Altered jawline, shifted hair strands, and changed background fold geometry"
+    },
+    {
+      "failure_id": "VT-WF-04",
+      "failure_mode": "Preexisting accessories or clothing boundaries clashing with new garment cuts (e.g. strapless vs high-neck)",
+      "root_cause": "Base model plates carrying preexisting clothing lines or jewelry that had to be awkwardly painted out",
+      "drift_vector": "Ghost neckline seams, blurred skin, clashing metal tones"
     }
   ],
   "what_to_adapt": [
@@ -57,6 +68,12 @@
       "adaptation_id": "VT-WA-03",
       "target_component": "atomic_lego_layers",
       "rule_addition": "Decompose all couture outfits and jewelry into sequential atomic Lego bricks (Layer 0 Clean Base -> Brick 1 Base Gown -> Brick 2 Drape/Pallu -> Brick 3 Belt -> Bricks 4-6 Jewelry)",
+      "status": "active"
+    },
+    {
+      "adaptation_id": "VT-WA-04",
+      "target_component": "decoupled_layer_hierarchy",
+      "rule_addition": "Enforce strict layer decoupling: Layer 1 (Scene/Lighting), Layer 2 (Bare-Minimum Canvas), Layer 3 (Beauty/Hair/Eyes), Layer 4 (Dress Bricks), Layer 5 (Jewelry), Layer 6 (Accessories) to allow independent UGC/Editorial switches, colorway edits, and accessory swaps",
       "status": "active"
     }
   ]
